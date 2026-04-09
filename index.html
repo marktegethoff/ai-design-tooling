@@ -1125,7 +1125,7 @@ Decision / Direction discarded / Constraint named:
       <div class="artifact-block" style="margin-top:3rem;">
         <p class="artifact-eyebrow">Artifact — Output</p>
         <div class="mockup-wrap">
-          <div class="mockup-phone" role="img" aria-label="Standard iOS-style app screen: navigation bar with Entries title, search field, list of note cards grouped by Today and Yesterday, bottom tab bar with four tabs">
+          <div class="mockup-phone" role="img" aria-label="App screen showing spatial navigation model: organizational panel revealed on the left by gesture, content timeline visible on the right, no tab bar">
             <!-- Status bar -->
             <div class="mockup-statusbar">
               <span class="mockup-statusbar-time">9:41</span>
@@ -1134,95 +1134,64 @@ Decision / Direction discarded / Constraint named:
                 <div class="mockup-bar-icon" style="width:8px;opacity:.55;"></div>
               </div>
             </div>
-            <!-- Nav bar -->
-            <div class="mockup-navbar">
-              <span class="mockup-navbar-title">Entries</span>
-              <span class="mockup-navbar-btn">+ New</span>
-            </div>
-            <!-- Search -->
-            <div class="mockup-searchbar">
-              <div class="mockup-search-pip"></div>
-              <span class="mockup-search-text">Search</span>
-            </div>
-            <!-- List -->
-            <div class="mockup-scroll">
-              <div class="mockup-section-header">Today</div>
-              <div class="mockup-card mockup-card--selected">
-                <div class="mockup-card-top">
-                  <div class="mockup-card-icon" style="background:#ddeeff;"></div>
-                  <div class="mockup-card-text">
-                    <p class="mockup-card-title">Navigation model review</p>
-                    <p class="mockup-card-excerpt">Tab bars imply equal-weight destinations. None of the standard patterns fit — spatial offset might be the only model that works here.</p>
+            <!-- Spatial body: two panels side by side -->
+            <div class="mockup-spatial-body">
+              <!-- Organizational panel (revealed by gesture) -->
+              <div class="mockup-org-panel">
+                <p class="mockup-org-label">Groups</p>
+                <div class="mockup-org-item mockup-org-item--active">Navigation model</div>
+                <div class="mockup-org-item">Q2 roadmap</div>
+                <div class="mockup-org-item">User research</div>
+                <div class="mockup-org-item">Design system</div>
+                <div class="mockup-org-item">Sprint planning</div>
+                <div class="mockup-org-divider"></div>
+                <div class="mockup-org-item mockup-org-item--muted">Archive</div>
+              </div>
+              <!-- Content timeline (dominant view) -->
+              <div class="mockup-content-panel">
+                <div class="mockup-content-header">
+                  <span class="mockup-content-title">Navigation model</span>
+                  <span class="mockup-content-count">12 entries</span>
+                </div>
+                <div class="mockup-entry-list">
+                  <div class="mockup-entry">
+                    <div class="mockup-entry-dot mockup-entry-dot--q"></div>
+                    <div class="mockup-entry-body">
+                      <p class="mockup-entry-text">Does the nav model need to hold three states simultaneously, or just feel like it does?</p>
+                      <p class="mockup-entry-ts">9:14 AM</p>
+                    </div>
+                  </div>
+                  <div class="mockup-entry mockup-entry--active">
+                    <div class="mockup-entry-dot mockup-entry-dot--ten"></div>
+                    <div class="mockup-entry-body">
+                      <p class="mockup-entry-text">Tab bars fail. Stacks fail. Spatial offset is the only model where three states coexist without hierarchy.</p>
+                      <p class="mockup-entry-ts">9:31 AM</p>
+                    </div>
+                  </div>
+                  <div class="mockup-entry">
+                    <div class="mockup-entry-dot mockup-entry-dot--act"></div>
+                    <div class="mockup-entry-body">
+                      <p class="mockup-entry-text">Two detents. The interface shifts to reveal — it does not navigate.</p>
+                      <p class="mockup-entry-ts">11:52 AM</p>
+                    </div>
+                  </div>
+                  <div class="mockup-entry">
+                    <div class="mockup-entry-dot mockup-entry-dot--idea"></div>
+                    <div class="mockup-entry-body">
+                      <p class="mockup-entry-text">Haptic at detent crossings. Spring to snap target. Gesture is the navigation model.</p>
+                      <p class="mockup-entry-ts">2:14 PM</p>
+                    </div>
                   </div>
                 </div>
-                <div class="mockup-card-meta">
-                  <span class="mockup-card-date">9:41 AM</span>
-                  <span class="mockup-card-tag mockup-card-tag--blue">Design</span>
+                <div class="mockup-compose-strip">
+                  <div class="mockup-compose-field"></div>
+                  <div class="mockup-compose-commit"></div>
                 </div>
-              </div>
-              <div class="mockup-card">
-                <div class="mockup-card-top">
-                  <div class="mockup-card-icon" style="background:#ddf3e4;"></div>
-                  <div class="mockup-card-text">
-                    <p class="mockup-card-title">Q2 roadmap notes</p>
-                    <p class="mockup-card-excerpt">Three priorities this quarter: auth, onboarding, and the sync layer. Engineering is blocked on the auth spec.</p>
-                  </div>
-                </div>
-                <div class="mockup-card-meta">
-                  <span class="mockup-card-date">8:12 AM</span>
-                  <span class="mockup-card-tag mockup-card-tag--green">Planning</span>
-                </div>
-              </div>
-              <div class="mockup-section-header">Yesterday</div>
-              <div class="mockup-card">
-                <div class="mockup-card-top">
-                  <div class="mockup-card-icon" style="background:#fef0e0;"></div>
-                  <div class="mockup-card-text">
-                    <p class="mockup-card-title">User interview synthesis</p>
-                    <p class="mockup-card-excerpt">Three participants. All struggled with the same transition — going from writing to reviewing. The context switch is too expensive.</p>
-                  </div>
-                </div>
-                <div class="mockup-card-meta">
-                  <span class="mockup-card-date">Mar 14</span>
-                  <span class="mockup-card-tag mockup-card-tag--orange">Research</span>
-                </div>
-              </div>
-              <div class="mockup-card">
-                <div class="mockup-card-top">
-                  <div class="mockup-card-icon" style="background:#ede8ff;"></div>
-                  <div class="mockup-card-text">
-                    <p class="mockup-card-title">Design system — token audit</p>
-                    <p class="mockup-card-excerpt">Surface scale is done. Signal colors need a second pass — tension and action are too close in hue at small sizes.</p>
-                  </div>
-                </div>
-                <div class="mockup-card-meta">
-                  <span class="mockup-card-date">Mar 14</span>
-                  <span class="mockup-card-tag mockup-card-tag--purple">Systems</span>
-                </div>
-              </div>
-            </div>
-            <!-- Tab bar -->
-            <div class="mockup-tabbar">
-              <div class="mockup-tab">
-                <div class="mockup-tab-icon mockup-tab-icon--active"></div>
-                <span class="mockup-tab-label mockup-tab-label--active">Entries</span>
-              </div>
-              <div class="mockup-tab">
-                <div class="mockup-tab-icon"></div>
-                <span class="mockup-tab-label">Groups</span>
-              </div>
-              <div class="mockup-tab">
-                <div class="mockup-tab-icon"></div>
-                <span class="mockup-tab-label">Search</span>
-              </div>
-              <div class="mockup-tab">
-                <div class="mockup-tab-icon"></div>
-                <span class="mockup-tab-label">Settings</span>
               </div>
             </div>
           </div>
         </div>
-        <p class="artifact-caption">Genericized app screen — standard iOS navigation, card list with category tags, four-tab navigation. The content reads as a design productivity tool without referencing any specific product.</p>
+        <p class="artifact-caption">The inevitable solution. Organizational panel revealed by gesture, not navigation. Content timeline is the dominant view. No tab bar — the decision anatomy eliminated it. Three states coexist spatially.</p>
       </div>
 
     </div>

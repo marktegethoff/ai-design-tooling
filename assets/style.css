@@ -988,9 +988,9 @@ code {
 /* — Phone Mockup ——————————————————————————— */
 
 .mockup-wrap {
-  background: #e5e5ea;
+  background: #2a2a2e;
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 3rem 2rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -998,15 +998,168 @@ code {
 }
 
 .mockup-phone {
-  width: 300px;
-  background: #f2f2f7;
-  border-radius: 32px;
-  border: 6px solid #1c1c1e;
+  /* iPhone 16 Pro proportions: 393 × 852pt ≈ 9:19.5 */
+  width: 260px;
+  height: 564px;
+  background: #f5f5f0;
+  border-radius: 44px;
+  border: 8px solid #1c1c1e;
   overflow: hidden;
-  box-shadow: 0 24px 48px rgba(0,0,0,.3), inset 0 0 0 1px rgba(255,255,255,.15);
+  box-shadow: 0 32px 64px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.12);
   font-family: var(--font-sans);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+/* Spatial layout */
+.mockup-spatial-body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Organizational panel — revealed by gesture */
+.mockup-org-panel {
+  width: 88px;
+  flex-shrink: 0;
+  background: #ebebeb;
+  border-right: 1px solid rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+
+.mockup-org-label {
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.35);
+  padding: 0.1rem 0.6rem 0.35rem;
+}
+
+.mockup-org-item {
+  font-size: 0.58rem;
+  color: rgba(0,0,0,.55);
+  padding: 0.3rem 0.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0;
+}
+
+.mockup-org-item--active {
+  background: rgba(0,0,0,.08);
+  color: rgba(0,0,0,.85);
+  font-weight: 600;
+}
+
+.mockup-org-item--muted { color: rgba(0,0,0,.3); }
+
+.mockup-org-divider {
+  height: 1px;
+  background: rgba(0,0,0,.08);
+  margin: 0.35rem 0.5rem;
+}
+
+/* Content panel — dominant, full height */
+.mockup-content-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mockup-content-header {
+  padding: 0.45rem 0.65rem 0.3rem;
+  border-bottom: 1px solid rgba(0,0,0,.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+
+.mockup-content-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #1c1c1e;
+}
+
+.mockup-content-count {
+  font-size: 0.52rem;
+  color: rgba(0,0,0,.3);
+}
+
+.mockup-entry-list {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mockup-entry {
+  padding: 0.45rem 0.65rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  flex-shrink: 0;
+}
+
+.mockup-entry--active { background: #f0f5ff; }
+
+.mockup-entry-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.mockup-entry-dot--obs  { background: rgba(0,0,0,.2); }
+.mockup-entry-dot--q    { background: #3b82f6; }
+.mockup-entry-dot--idea { background: #22c55e; }
+.mockup-entry-dot--ten  { background: #f59e0b; }
+.mockup-entry-dot--act  { background: #ef4444; }
+.mockup-entry-dot--ref  { background: #8b5cf6; }
+
+.mockup-entry-body { flex: 1; min-width: 0; }
+
+.mockup-entry-text {
+  font-size: 0.62rem;
+  color: rgba(0,0,0,.75);
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.mockup-entry-ts {
+  font-size: 0.5rem;
+  color: rgba(0,0,0,.28);
+  margin-top: 0.15rem;
+}
+
+.mockup-compose-strip {
+  background: #f5f5f0;
+  border-top: 1px solid rgba(0,0,0,.08);
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.mockup-compose-field {
+  flex: 1;
+  height: 24px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,.12);
 }
 
 /* Status bar */
