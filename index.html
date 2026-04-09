@@ -20,7 +20,7 @@
     <ul class="topnav-links">
       <li><a href="#" onclick="showPage('page-home')" class="nav-link active" id="nav-home">Overview</a></li>
       <li class="has-dropdown">
-        <a href="#" class="nav-link" onclick="toggleDropdown('dd-system')">The System <span class="material-symbols-outlined icon-sm">expand_more</span></a>
+        <a href="#" class="nav-link" id="nav-system" onclick="toggleDropdown('dd-system')">The System <span class="material-symbols-outlined icon-sm" aria-hidden="true">expand_more</span></a>
         <ul class="dropdown" id="dd-system">
           <li><a href="#" onclick="showPage('page-behavioral-contract')">Behavioral Contract</a></li>
           <li><a href="#" onclick="showPage('page-agents')">Agents</a></li>
@@ -29,7 +29,7 @@
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="#" class="nav-link" onclick="toggleDropdown('dd-pillars')">Five Pillars <span class="material-symbols-outlined icon-sm">expand_more</span></a>
+        <a href="#" class="nav-link" id="nav-pillars" onclick="toggleDropdown('dd-pillars')">Five Pillars <span class="material-symbols-outlined icon-sm" aria-hidden="true">expand_more</span></a>
         <ul class="dropdown" id="dd-pillars">
           <li><a href="#" onclick="showPage('page-governance')">Governance</a></li>
           <li><a href="#" onclick="showPage('page-vocabulary')">Vocabulary</a></li>
@@ -73,7 +73,7 @@
           <p class="compare-desc">Mechanics curriculum. How to use Claude Code: terminal, git, prompting, CLAUDE.md syntax, 8-week program.</p>
         </div>
         <div class="compare-divider">
-          <span class="material-symbols-outlined">add</span>
+          <span class="material-symbols-outlined" aria-hidden="true">add</span>
         </div>
         <div class="compare-card compare-card--highlight">
           <p class="compare-label">EPS.xd OS — this site</p>
@@ -90,35 +90,35 @@
 
       <div class="concept-grid">
         <div class="concept-card" onclick="showPage('page-proof')">
-          <span class="material-symbols-outlined concept-icon">rocket_launch</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">rocket_launch</span>
           <p class="concept-number">01</p>
           <h3 class="concept-title">Capability Proof</h3>
           <p class="concept-desc">A real demonstration of what one designer can build with this system. Creates pull. Senior designers respond to proof, not process documentation.</p>
           <p class="concept-action">Read the case study →</p>
         </div>
         <div class="concept-card" onclick="showPage('page-vocabulary')">
-          <span class="material-symbols-outlined concept-icon">contract</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">contract</span>
           <p class="concept-number">02</p>
           <h3 class="concept-title">Vocabulary</h3>
           <p class="concept-desc">Calling a CLAUDE.md a "behavioral contract" — not a config file — changes how designers relate to maintaining it. Vocabulary determines behavior.</p>
           <p class="concept-action">Learn the framing →</p>
         </div>
         <div class="concept-card" onclick="showPage('page-governance')">
-          <span class="material-symbols-outlined concept-icon">account_tree</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">account_tree</span>
           <p class="concept-number">03</p>
           <h3 class="concept-title">Governance</h3>
           <p class="concept-desc">A three-layer inheritance structure — org → team → personal — so shared context is always present without overriding team autonomy.</p>
           <p class="concept-action">See the structure →</p>
         </div>
         <div class="concept-card" onclick="showPage('page-onboarding')">
-          <span class="material-symbols-outlined concept-icon">login</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">login</span>
           <p class="concept-number">04</p>
           <h3 class="concept-title">Onboarding</h3>
           <p class="concept-desc">New designers start within the team's behavioral contract, not a blank CLI. Context arrives first; tools operate within it.</p>
           <p class="concept-action">See the setup →</p>
         </div>
         <div class="concept-card" onclick="showPage('page-ceremony')">
-          <span class="material-symbols-outlined concept-icon">commit</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">commit</span>
           <p class="concept-number">05</p>
           <h3 class="concept-title">Commit Ceremony</h3>
           <p class="concept-desc">One sentence at the end of every team session. Three months of that and you have institutional memory the AI can use.</p>
@@ -132,48 +132,6 @@
     <div class="section-inner">
       <h2 class="section-title">We start with proof, not setup</h2>
       <p class="section-body">The sequence matters. If you come to us asking for the tool setup first, we'll show you the capability proof first. That's intentional — the system doesn't land until you've seen what it makes possible.</p>
-
-      <div class="sequence-rail">
-        <div class="sequence-step">
-          <span class="seq-num">1</span>
-          <div class="seq-body">
-            <p class="seq-title">Capability Proof</p>
-            <p class="seq-desc">Creates pull. Establishes why.</p>
-          </div>
-        </div>
-        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
-        <div class="sequence-step">
-          <span class="seq-num">2</span>
-          <div class="seq-body">
-            <p class="seq-title">Vocabulary</p>
-            <p class="seq-desc">Changes the mental model before any setup begins.</p>
-          </div>
-        </div>
-        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
-        <div class="sequence-step">
-          <span class="seq-num">3</span>
-          <div class="seq-body">
-            <p class="seq-title">Governance</p>
-            <p class="seq-desc">Establishes the inheritance structure.</p>
-          </div>
-        </div>
-        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
-        <div class="sequence-step">
-          <span class="seq-num">4</span>
-          <div class="seq-body">
-            <p class="seq-title">Onboarding</p>
-            <p class="seq-desc">Entry point for new team members.</p>
-          </div>
-        </div>
-        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
-        <div class="sequence-step">
-          <span class="seq-num">5</span>
-          <div class="seq-body">
-            <p class="seq-title">Commit Ceremony</p>
-            <p class="seq-desc">Sustains the system over time.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -200,7 +158,7 @@
           <p class="compare-label">Called a "config file"</p>
           <p class="compare-desc">Designers treat it as IT setup. It gets written once, never updated, and becomes stale within a month. Claude's behavior drifts from team standards. No one feels responsible for maintaining it.</p>
         </div>
-        <div class="compare-divider"><span class="material-symbols-outlined">compare_arrows</span></div>
+        <div class="compare-divider"><span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span></div>
         <div class="compare-card compare-card--highlight">
           <p class="compare-label">Called a "behavioral contract"</p>
           <p class="compare-desc">Every edit becomes a design decision with consequence. Designers debate what goes in. Updating it feels like craft, not housekeeping. The contract evolves with the team's standards.</p>
@@ -208,7 +166,7 @@
       </div>
 
       <div class="callout callout--insight">
-        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div>
           <p class="callout-title">The live demo is required</p>
           <p>The phrase only lands if a designer edits the CLAUDE.md and immediately sees AI behavior change in response. Without that visceral before/after, "behavioral contract" is just a slogan. Start every introduction with a live edit and its consequence.</p>
@@ -223,24 +181,24 @@
 
       <div class="concept-grid concept-grid--3">
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">gavel</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">gavel</span>
           <h3 class="concept-title">Non-negotiables</h3>
           <p class="concept-desc">Brand rules, IP handling, accessibility floor, tone. These are the org layer — they must never be overridden downstream.</p>
         </div>
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">design_services</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">design_services</span>
           <h3 class="concept-title">Team standards</h3>
           <p class="concept-desc">Design system tokens, component vocabulary, platform conventions, decision hierarchy. How this team makes decisions.</p>
         </div>
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">psychology</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">psychology</span>
           <h3 class="concept-title">Process philosophy</h3>
           <p class="concept-desc">What the AI should never do. What it should always do. How it should surface uncertainty. Anti-patterns that are treated as defects.</p>
         </div>
       </div>
 
       <div class="callout callout--warning">
-        <span class="material-symbols-outlined callout-icon">warning</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">warning</span>
         <div>
           <p class="callout-title">Agents and skills are not guardrails</p>
           <p>Claude Code agents and workflow skills encode <em>process</em>, not enforcement. They guide the sequence of work and surface the right questions — they do not prevent bad output or enforce compliance. Judgment remains with the designer. The behavioral contract is a statement of intent, not a safety net.</p>
@@ -264,7 +222,7 @@
       </div>
 
       <div class="callout callout--tip">
-        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">tips_and_updates</span>
         <div><p>Add this hierarchy to your team CLAUDE.md verbatim. When Claude produces output that prioritizes visual polish over structural correctness, the hierarchy is missing or not being enforced through prompting.</p></div>
       </div>
     </div>
@@ -287,7 +245,7 @@
     <div class="section-inner">
 
       <div class="callout callout--warning">
-        <span class="material-symbols-outlined callout-icon">warning</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">warning</span>
         <div>
           <p class="callout-title">Agents are not bulletproof</p>
           <p>An agent's defined scope is a behavioral instruction, not enforcement. Claude will follow the scope while the conversation is fresh — but in long sessions, or with contradictory prompts, it can drift. Check agent output the same way you check any AI output: read it, verify it, apply judgment.</p>
@@ -301,7 +259,7 @@
           <p class="compare-label">Discipline agents</p>
           <p class="compare-desc">Single-purpose specialists. Each applies one lens: Historian surfaces precedent. Critic removes unnecessary elements. Architect defines data models. Designer specifies interaction states. They don't make final decisions — they bring specific analysis.</p>
         </div>
-        <div class="compare-divider"><span class="material-symbols-outlined">add</span></div>
+        <div class="compare-divider"><span class="material-symbols-outlined" aria-hidden="true">add</span></div>
         <div class="compare-card compare-card--highlight">
           <p class="compare-label">Workflow orchestrators</p>
           <p class="compare-desc">Skills that route work through a sequence of discipline agents. A design workflow might invoke Historian → Strategist → Architect → Critic → Designer in order, each building on the previous. The orchestrator manages the sequence; the designer approves each gate.</p>
@@ -323,7 +281,7 @@
       </table>
 
       <div class="callout callout--insight">
-        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div><p>The model assignment matters most at the quality gate. Running everything through Sonnet is fine for drafting; the final ship/no-ship verdict should go to Opus. The cost difference is negligible per session; the quality difference on taste-level decisions is significant.</p></div>
       </div>
     </div>
@@ -352,7 +310,7 @@
           <p class="compare-label">A prompt</p>
           <p class="compare-desc">"Design the navigation model for this app." Claude responds once. The quality depends entirely on how well the prompt was written. No gates. No structure. No checkpoints.</p>
         </div>
-        <div class="compare-divider"><span class="material-symbols-outlined">compare_arrows</span></div>
+        <div class="compare-divider"><span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span></div>
         <div class="compare-card compare-card--highlight">
           <p class="compare-label">A skill</p>
           <p class="compare-desc">/studio-design triggers: check prior decisions → Historian pass → Strategist evaluation → Architect constraints → Critic reduction → Designer directions → Accessibility review. Pauses for approval at each gate. The designer controls the sequence.</p>
@@ -394,7 +352,7 @@
       </div>
 
       <div class="callout callout--tip">
-        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">tips_and_updates</span>
         <div><p>Start with step 1. Build a skill when you repeat the same sequence three times and the sequence matters. Optimize latency only after the sequence is proven.</p></div>
       </div>
     </div>
@@ -423,7 +381,7 @@
           <p class="compare-label">Global memory</p>
           <p class="compare-desc">Travels with you across all projects. Design foundations. Craft preferences. Process learnings. Things that are true about how you work regardless of what you're working on.</p>
         </div>
-        <div class="compare-divider"><span class="material-symbols-outlined">add</span></div>
+        <div class="compare-divider"><span class="material-symbols-outlined" aria-hidden="true">add</span></div>
         <div class="compare-card compare-card--highlight">
           <p class="compare-label">Project memory</p>
           <p class="compare-desc">Scoped to one product or team. Brand principles. System invariants. Decisions made. Things discarded and why. A new session picks up exactly where the last one left off.</p>
@@ -447,7 +405,7 @@
       </table>
 
       <div class="callout callout--warning">
-        <span class="material-symbols-outlined callout-icon">warning</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">warning</span>
         <div>
           <p class="callout-title">Memory files go stale</p>
           <p>A memory entry that names a file, function, or decision is a claim about the state of the world when it was written. Before acting on recalled memory, verify it against the current state. Stale memory that contradicts current reality should be updated or removed, not followed.</p>
@@ -473,7 +431,7 @@
     <div class="section-inner">
 
       <div class="callout callout--insight">
-        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div><p>Claude Code supports <code>@filename</code> imports inside CLAUDE.md natively. The three-layer stack uses this — no custom tooling required. Each layer imports the layer above it and extends it.</p></div>
       </div>
 
@@ -533,7 +491,7 @@
       </div>
 
       <div class="callout callout--warning">
-        <span class="material-symbols-outlined callout-icon">warning</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">warning</span>
         <div>
           <p class="callout-title">Keep the org layer thin</p>
           <p>If the org layer becomes opinionated about craft — component patterns, visual style, prompt strategy — senior designers will reject it as top-down prescription. The org layer's authority comes from its restraint. It governs only what the org must govern.</p>
@@ -598,7 +556,7 @@
       </table>
 
       <div class="callout callout--insight">
-        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div>
           <p class="callout-title">Introduce vocabulary before tools</p>
           <p>Run the vocabulary workshop before the first Claude Code session. Designers who arrive at the terminal already knowing what a behavioral contract is will configure their CLAUDE.md differently — more deliberately — than designers who encounter the file without that frame.</p>
@@ -624,7 +582,7 @@
     <div class="section-inner">
 
       <div class="callout callout--warning">
-        <span class="material-symbols-outlined callout-icon">warning</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">warning</span>
         <div>
           <p class="callout-title">Self-service terminal install fails for non-technical designers</p>
           <p>A "clone the repo and run one command" onboarding only works if every prerequisite is already in place. At Capital One, they won't be. The install must be owned by IT — pre-deployed as part of the standard design tooling package via MDM. Designers should never touch the command line for setup.</p>
@@ -635,17 +593,17 @@
 
       <div class="concept-grid concept-grid--3">
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">folder</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">folder</span>
           <h3 class="concept-title">Team CLAUDE.md</h3>
           <p class="concept-desc">Pre-populated with team standards, design system, decision hierarchy, and org layer import. Ready to use on day one.</p>
         </div>
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">smart_toy</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">smart_toy</span>
           <h3 class="concept-title">Discipline agents</h3>
           <p class="concept-desc">The team's agent set installed to <code>~/.claude/agents/</code>. New members get the same specialists as everyone else from first session.</p>
         </div>
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">terminal</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">terminal</span>
           <h3 class="concept-title">Workflow skills</h3>
           <p class="concept-desc">Team-validated workflow skills installed and ready. The right sequence for design, review, and implementation is already encoded.</p>
         </div>
@@ -687,7 +645,7 @@
           <p class="compare-label">Voluntary contribution</p>
           <p class="compare-desc">"Remember to update the docs after the session." Nobody does. The record is always 3 weeks behind. New members inherit an incomplete picture.</p>
         </div>
-        <div class="compare-divider"><span class="material-symbols-outlined">compare_arrows</span></div>
+        <div class="compare-divider"><span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span></div>
         <div class="compare-card compare-card--highlight">
           <p class="compare-label">The commit ceremony</p>
           <p class="compare-desc">The session isn't closed until someone writes the sentence. One rotation. One sentence. The record grows every session without any separate effort.</p>
@@ -718,7 +676,7 @@
       </table>
 
       <div class="callout callout--warning">
-        <span class="material-symbols-outlined callout-icon">warning</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">warning</span>
         <div>
           <p class="callout-title">Git is the wrong first surface for non-technical designers</p>
           <p>Git write access at an enterprise requires an access request that can take 2–4 weeks. Terminal commits create social pressure to appear competent; designers who don't know how will skip rather than admit it. Use a <strong>#design-decisions Slack channel</strong> with a one-sentence template as the commit surface. Sync to the shared repo weekly in the background. Designers never touch git to participate in the ceremony.</p>
@@ -751,7 +709,7 @@ Decision / Direction discarded / Constraint named:
     <div class="section-inner">
 
       <div class="callout callout--insight">
-        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div>
           <p class="callout-title">The proof must be honest, not polished</p>
           <p>A case study that only shows what worked reads as marketing. The proof that moves senior designers shows where the methodology was required (not just helpful), where judgment was irreplaceable, and what the system couldn't solve. Honesty is what makes it credible.</p>
@@ -762,17 +720,17 @@ Decision / Direction discarded / Constraint named:
 
       <div class="concept-grid concept-grid--3">
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">person</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">person</span>
           <h3 class="concept-title">Designer in control</h3>
           <p class="concept-desc">The AI doing labor the designer directed — not the AI making decisions the designer accepted. Every output visible; every judgment owned.</p>
         </div>
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">build</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">build</span>
           <h3 class="concept-title">AI doing real labor</h3>
           <p class="concept-desc">Not summaries or text. Architecture decisions, code, design system components, structured analysis — work the designer would have found tedious or inaccessible alone.</p>
         </div>
         <div class="concept-card">
-          <span class="material-symbols-outlined concept-icon">verified</span>
+          <span class="material-symbols-outlined concept-icon" aria-hidden="true">verified</span>
           <h3 class="concept-title">Output at the right quality bar</h3>
           <p class="concept-desc">The end product must meet the standard senior designers recognize as legitimate. A rough prototype proves a different (weaker) thing than a production-quality artifact.</p>
         </div>
@@ -782,7 +740,7 @@ Decision / Direction discarded / Constraint named:
       <p class="section-body">Without an immediate next action, the proof converts attention into admiration, not adoption. Every proof asset must link directly to a workshop, a template, or a setup path. The designer finishes reading and has one clear thing to do next.</p>
 
       <div class="callout callout--tip">
-        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">tips_and_updates</span>
         <div><p>The case study for EPS.xd OS is linked on the next page. It documents the methodology used to build a production-quality digital product as a solo designer — the full arc, including what broke, what the system couldn't solve, and where judgment was irreplaceable.</p>
         <p style="margin-top:0.5rem;"><a href="#" onclick="showPage('page-case-study')">Read the case study →</a></p></div>
       </div>
@@ -798,7 +756,7 @@ Decision / Direction discarded / Constraint named:
     <div class="hero-inner">
       <p class="hero-eyebrow">Case Study</p>
       <h1 class="hero-title">One EPS.xd designer. Full production product. This is the proof.</h1>
-      <p class="hero-subtitle">Your AI Tooling lead built a production-quality digital product solo — design system, AI features, database architecture, sync infrastructure, release model. Using exactly the methodology described in this site.</p>
+      <p class="hero-subtitle">Your AI Tooling lead built a production-quality digital product solo — design system, AI features, database architecture, sync infrastructure, release model.</p>
     </div>
   </div>
 
@@ -807,11 +765,11 @@ Decision / Direction discarded / Constraint named:
     <div class="section-inner">
 
       <div class="callout callout--tip">
-        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">tips_and_updates</span>
         <div><p>The product is private IP and is not named here. What is documented is the methodology — the system structure, the decisions made, the practice that evolved, and the honest account of where judgment was irreplaceable.</p></div>
       </div>
 
-      <h2 class="section-title" style="margin-top:2rem;">Section 01 — The scope</h2>
+      <h2 class="section-title" style="margin-top:2rem;">The scope</h2>
       <p class="section-body">A well-resourced product team for this scope of work would have staffed a lead designer, two product designers, a design systems designer, a researcher, a lead iOS engineer, two iOS engineers, a QA engineer, and a product manager. Ten people. Six to twelve months of coordinated work.</p>
       <p class="section-body">This is not that. One designer. The same scope. The difference is not capability — it is infrastructure.</p>
 
@@ -819,19 +777,19 @@ Decision / Direction discarded / Constraint named:
         <div class="team-col">
           <p class="team-col-label">Funded team — typical staffing</p>
           <ul class="team-list">
-            <li><span class="material-symbols-outlined">person</span> Design Lead × 1</li>
-            <li><span class="material-symbols-outlined">person</span> Product Designer × 2</li>
-            <li><span class="material-symbols-outlined">person</span> Design Systems Designer × 1</li>
-            <li><span class="material-symbols-outlined">person</span> UX Researcher × 1</li>
-            <li><span class="material-symbols-outlined">person</span> iOS Engineer (Lead) × 1</li>
-            <li><span class="material-symbols-outlined">person</span> iOS Engineer × 2</li>
-            <li><span class="material-symbols-outlined">person</span> QA Engineer × 1</li>
-            <li><span class="material-symbols-outlined">person</span> Product Manager × 1</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> Design Lead × 1</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> Product Designer × 2</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> Design Systems Designer × 1</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> UX Researcher × 1</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> iOS Engineer (Lead) × 1</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> iOS Engineer × 2</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> QA Engineer × 1</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">person</span> Product Manager × 1</li>
           </ul>
           <p class="team-total">~10 people · 6–12 months</p>
         </div>
         <div class="team-divider">
-          <span class="material-symbols-outlined">compare_arrows</span>
+          <span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span>
         </div>
         <div class="team-col team-col--highlight">
           <p class="team-col-label">EPS.xd OS — deployed</p>
@@ -858,7 +816,7 @@ Decision / Direction discarded / Constraint named:
   <div class="home-section home-section--warm">
     <div class="section-inner">
 
-      <h2 class="section-title">Section 02 — One decision, shown in full</h2>
+      <h2 class="section-title">One decision, shown in full</h2>
       <p class="section-body">A single prompt asking Claude to "design the navigation model for a content-dense mobile app" produces one answer — usually the obvious answer. The methodology produces a reasoning trail. Here is what that looks like.</p>
       <p class="section-body"><strong>The problem:</strong> A mobile app requires simultaneous access to three persistent states — a content record, a compose surface, and an organizational view. Standard navigation patterns (tab bar, navigation stack, modal sheets) each fail a specific requirement: tabs imply parallel content of equal weight; stacks imply hierarchy that must be traversed; modals imply temporary interruption. None of these match the actual model.</p>
 
@@ -867,27 +825,27 @@ Decision / Direction discarded / Constraint named:
           <div class="da-discipline">Problem</div>
           <div class="da-output">Three persistent states. No standard navigation pattern fits. Any choice forces a compromise.</div>
         </div>
-        <div class="da-connector"><span class="material-symbols-outlined">arrow_downward</span></div>
+        <div class="da-connector"><span class="material-symbols-outlined" aria-hidden="true">arrow_downward</span></div>
         <div class="da-node">
           <div class="da-discipline">Historian</div>
           <div class="da-output">Tab bars: fail. Imply equal-weight parallel destinations — one state here is dominant. Nav stacks: partial. Depth navigation is correct for one transition, not all three. Spatial models (Palm OS, early iOS): survived when states exist simultaneously in physical space, not hierarchically.</div>
         </div>
-        <div class="da-connector"><span class="material-symbols-outlined">arrow_downward</span></div>
+        <div class="da-connector"><span class="material-symbols-outlined" aria-hidden="true">arrow_downward</span></div>
         <div class="da-node">
           <div class="da-discipline">Architect</div>
           <div class="da-output">Constraint: the three states must coexist spatially, not sequentially. A gesture model is required — the user moves between states, not navigates to them. Two detent positions define the rest state and the exposed state of each surface.</div>
         </div>
-        <div class="da-connector"><span class="material-symbols-outlined">arrow_downward</span></div>
+        <div class="da-connector"><span class="material-symbols-outlined" aria-hidden="true">arrow_downward</span></div>
         <div class="da-node">
           <div class="da-discipline">Critic</div>
           <div class="da-output">Remove the tab bar — permanent chrome for a model where one state is always dominant is visual noise. Remove the modal for organizational view — dismissal creates context loss that breaks the spatial metaphor. Keep the nav stack for depth transitions only.</div>
         </div>
-        <div class="da-connector"><span class="material-symbols-outlined">arrow_downward</span></div>
+        <div class="da-connector"><span class="material-symbols-outlined" aria-hidden="true">arrow_downward</span></div>
         <div class="da-node">
           <div class="da-discipline">Designer</div>
           <div class="da-output">Gesture-driven horizontal spine. Two detent positions: rest (content dominant) and revealed (organizational view exposed). Compose surface always accessible via gesture, never requiring navigation. Haptic feedback at detent crossings. Spring animation to snap target.</div>
         </div>
-        <div class="da-connector"><span class="material-symbols-outlined">arrow_downward</span></div>
+        <div class="da-connector"><span class="material-symbols-outlined" aria-hidden="true">arrow_downward</span></div>
         <div class="da-node da-node--verdict">
           <div class="da-discipline">Creative Director</div>
           <div class="da-output"><strong>INEVITABLE.</strong> The spatial model is the only solution that satisfies all three requirements simultaneously. Nothing can be removed without losing a constraint. Nothing was added that the constraints didn't require.</div>
@@ -895,7 +853,7 @@ Decision / Direction discarded / Constraint named:
       </div>
 
       <div class="callout callout--insight" style="margin-top:2rem;">
-        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div><p>A single prompt produces one node. This process produces six — each one eliminating options that seemed viable until examined. The reasoning trail is the output. The navigation model is a consequence of the trail, not the other way around.</p></div>
       </div>
 
@@ -906,7 +864,7 @@ Decision / Direction discarded / Constraint named:
   <div class="home-section">
     <div class="section-inner">
 
-      <h2 class="section-title">Section 03 — How the practice evolved</h2>
+      <h2 class="section-title">How the practice evolved</h2>
       <p class="section-body">This methodology was not designed in advance. It was grown in response to what the previous version couldn't do. Each inflection point below exists because the prior state failed in a specific, legible way.</p>
 
       <div class="evolution-timeline">
@@ -1002,7 +960,7 @@ Decision / Direction discarded / Constraint named:
       </div>
 
       <div class="callout callout--insight" style="margin-top:2.5rem;">
-        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div>
           <p class="callout-title">The most valuable practice isn't on this list</p>
           <p>Each inflection point above is something added. The practice that compounded more than any of them was subtraction — learning to solve the problem before reaching for the tool, to run the critic pass before the design pass, to ask whether the prototype was necessary before opening the canvas.</p>
@@ -1017,7 +975,7 @@ Decision / Direction discarded / Constraint named:
   <div class="home-section home-section--warm">
     <div class="section-inner">
 
-      <h2 class="section-title">Section 04 — The honest account</h2>
+      <h2 class="section-title">The honest account</h2>
       <p class="section-body">Most case studies show what worked. This one is incomplete without showing where the methodology was tested — where the system produced output that was structurally wrong, where judgment was the only tool available, where the process nearly failed.</p>
 
       <div class="honest-items">
@@ -1064,7 +1022,6 @@ Decision / Direction discarded / Constraint named:
 
       <div class="action-bridge">
         <button class="sds-btn sds-btn--primary sds-btn--md" onclick="showPage('page-setup')">See the Setup Guide →</button>
-        <button class="sds-btn sds-btn--ghost sds-btn--md" onclick="showPage('page-behavioral-contract')" style="margin-left:0.75rem; background: rgba(26,31,54,0.07); color: var(--color-text); border-color: var(--color-border);">Start with the Behavioral Contract →</button>
       </div>
 
     </div>
@@ -1135,7 +1092,7 @@ Decision / Direction discarded / Constraint named:
       </div>
 
       <div class="callout callout--warning">
-        <span class="material-symbols-outlined callout-icon">warning</span>
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">warning</span>
         <div>
           <p class="callout-title">Do not skip steps 1 and 2</p>
           <p>Teams that start with infrastructure setup (step 5) without the proof and vocabulary foundation (steps 1–2) treat the CLAUDE.md as a config file, skip the commit ceremony after two weeks, and conclude "it didn't really change how we work." The sequence is causal, not sequential.</p>

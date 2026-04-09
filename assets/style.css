@@ -13,7 +13,7 @@
   --color-white:      #ffffff;
   --color-text:       #1a1f36;
   --color-text-mid:   #4a5066;
-  --color-text-light: #8892a4;
+  --color-text-light: #6b7280;
   --color-border:     #e4e7ef;
   --color-accent:     #2d6be4;
   --color-accent-fg:  #2d6be4;
@@ -223,7 +223,7 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
-.sds-btn--md { padding: 0.6rem 1.25rem; font-size: 0.85rem; }
+.sds-btn--md { padding: 0.75rem 1.25rem; font-size: 0.85rem; }
 .sds-btn--sm { padding: 0.4rem 0.9rem; font-size: 0.78rem; }
 
 .sds-btn--primary {
