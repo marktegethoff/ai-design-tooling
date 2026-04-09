@@ -995,83 +995,104 @@ Decision / Direction discarded / Constraint named:
       <div class="artifact-block" style="margin-top:3rem;">
         <p class="artifact-eyebrow">Artifact — Output</p>
         <div class="mockup-wrap">
-          <div class="mockup-phone" role="img" aria-label="Abstracted app screen showing spatial navigation model: narrow timestamp spine on left, scrollable entry timeline on right, each entry tagged with a signal color dot">
+          <div class="mockup-phone" role="img" aria-label="Standard iOS-style app screen: navigation bar with Entries title, search field, list of note cards grouped by Today and Yesterday, bottom tab bar with four tabs">
+            <!-- Status bar -->
             <div class="mockup-statusbar">
               <span class="mockup-statusbar-time">9:41</span>
               <div class="mockup-statusbar-icons">
                 <div class="mockup-bar-icon"></div>
-                <div class="mockup-bar-icon" style="width:8px;opacity:.6;"></div>
+                <div class="mockup-bar-icon" style="width:8px;opacity:.55;"></div>
               </div>
             </div>
-            <div class="mockup-body">
-              <div class="mockup-spine">
-                <div class="mockup-spine-ts">9:14</div>
-                <div class="mockup-spine-ts">9:31</div>
-                <div class="mockup-spine-ts">11:52</div>
-                <div class="mockup-spine-ts mockup-spine-ts--gap">
-                  <span class="mockup-spine-gap-chip">1d</span>
+            <!-- Nav bar -->
+            <div class="mockup-navbar">
+              <span class="mockup-navbar-title">Entries</span>
+              <span class="mockup-navbar-btn">+ New</span>
+            </div>
+            <!-- Search -->
+            <div class="mockup-searchbar">
+              <div class="mockup-search-pip"></div>
+              <span class="mockup-search-text">Search</span>
+            </div>
+            <!-- List -->
+            <div class="mockup-scroll">
+              <div class="mockup-section-header">Today</div>
+              <div class="mockup-card mockup-card--selected">
+                <div class="mockup-card-top">
+                  <div class="mockup-card-icon" style="background:#ddeeff;"></div>
+                  <div class="mockup-card-text">
+                    <p class="mockup-card-title">Navigation model review</p>
+                    <p class="mockup-card-excerpt">Tab bars imply equal-weight destinations. None of the standard patterns fit — spatial offset might be the only model that works here.</p>
+                  </div>
                 </div>
-                <div class="mockup-spine-ts">8:03</div>
-                <div class="mockup-spine-ts">8:47</div>
-                <div class="mockup-spine-ts">2:14</div>
-                <div class="mockup-spine-ts">4:55</div>
+                <div class="mockup-card-meta">
+                  <span class="mockup-card-date">9:41 AM</span>
+                  <span class="mockup-card-tag mockup-card-tag--blue">Design</span>
+                </div>
               </div>
-              <div class="mockup-timeline">
-                <div class="mockup-entry">
-                  <div class="mockup-entry-dot mockup-entry-dot--q"></div>
-                  <div class="mockup-entry-body">
-                    <p class="mockup-entry-text">Does the navigation model need to hold three states simultaneously, or does it just need to feel like it does?</p>
+              <div class="mockup-card">
+                <div class="mockup-card-top">
+                  <div class="mockup-card-icon" style="background:#ddf3e4;"></div>
+                  <div class="mockup-card-text">
+                    <p class="mockup-card-title">Q2 roadmap notes</p>
+                    <p class="mockup-card-excerpt">Three priorities this quarter: auth, onboarding, and the sync layer. Engineering is blocked on the auth spec.</p>
                   </div>
                 </div>
-                <div class="mockup-entry">
-                  <div class="mockup-entry-dot mockup-entry-dot--idea"></div>
-                  <div class="mockup-entry-body">
-                    <p class="mockup-entry-text">The framing problem isn't about the feature itself — it's about what the feature implies about the product's intent.</p>
+                <div class="mockup-card-meta">
+                  <span class="mockup-card-date">8:12 AM</span>
+                  <span class="mockup-card-tag mockup-card-tag--green">Planning</span>
+                </div>
+              </div>
+              <div class="mockup-section-header">Yesterday</div>
+              <div class="mockup-card">
+                <div class="mockup-card-top">
+                  <div class="mockup-card-icon" style="background:#fef0e0;"></div>
+                  <div class="mockup-card-text">
+                    <p class="mockup-card-title">User interview synthesis</p>
+                    <p class="mockup-card-excerpt">Three participants. All struggled with the same transition — going from writing to reviewing. The context switch is too expensive.</p>
                   </div>
                 </div>
-                <div class="mockup-entry mockup-entry--active">
-                  <div class="mockup-entry-dot mockup-entry-dot--ten"></div>
-                  <div class="mockup-entry-body">
-                    <p class="mockup-entry-text">Tab bars imply parallel content. Navigation stacks imply hierarchy. Neither matches the model. There is no existing pattern for this.</p>
-                    <p class="mockup-entry-thread">↗ Spatial Navigation Model</p>
+                <div class="mockup-card-meta">
+                  <span class="mockup-card-date">Mar 14</span>
+                  <span class="mockup-card-tag mockup-card-tag--orange">Research</span>
+                </div>
+              </div>
+              <div class="mockup-card">
+                <div class="mockup-card-top">
+                  <div class="mockup-card-icon" style="background:#ede8ff;"></div>
+                  <div class="mockup-card-text">
+                    <p class="mockup-card-title">Design system — token audit</p>
+                    <p class="mockup-card-excerpt">Surface scale is done. Signal colors need a second pass — tension and action are too close in hue at small sizes.</p>
                   </div>
                 </div>
-                <div class="mockup-datelabel">— 1 day —</div>
-                <div class="mockup-entry">
-                  <div class="mockup-entry-dot mockup-entry-dot--act"></div>
-                  <div class="mockup-entry-body">
-                    <p class="mockup-entry-text">The spine is the mechanism. The timeline is the tape. These are not tabs.</p>
-                    <p class="mockup-entry-thread">↗ Spatial Navigation Model</p>
-                  </div>
-                </div>
-                <div class="mockup-entry">
-                  <div class="mockup-entry-dot mockup-entry-dot--obs"></div>
-                  <div class="mockup-entry-body">
-                    <p class="mockup-entry-text">Spatial offset means the content area is always full width. The interface shifts to reveal — it does not navigate.</p>
-                  </div>
-                </div>
-                <div class="mockup-entry">
-                  <div class="mockup-entry-dot mockup-entry-dot--ref"></div>
-                  <div class="mockup-entry-body">
-                    <p class="mockup-entry-text">Three detents. Zero tabs. The gesture is the navigation model.</p>
-                    <p class="mockup-entry-thread">↗ Spatial Navigation Model</p>
-                  </div>
-                </div>
-                <div class="mockup-entry">
-                  <div class="mockup-entry-dot mockup-entry-dot--idea"></div>
-                  <div class="mockup-entry-body">
-                    <p class="mockup-entry-text">Spring animation at snap target. Haptic feedback at each detent crossing — light impact, 8pt window.</p>
-                  </div>
+                <div class="mockup-card-meta">
+                  <span class="mockup-card-date">Mar 14</span>
+                  <span class="mockup-card-tag mockup-card-tag--purple">Systems</span>
                 </div>
               </div>
             </div>
-            <div class="mockup-compose-bar">
-              <div class="mockup-compose-field"></div>
-              <div class="mockup-compose-commit"></div>
+            <!-- Tab bar -->
+            <div class="mockup-tabbar">
+              <div class="mockup-tab">
+                <div class="mockup-tab-icon mockup-tab-icon--active"></div>
+                <span class="mockup-tab-label mockup-tab-label--active">Entries</span>
+              </div>
+              <div class="mockup-tab">
+                <div class="mockup-tab-icon"></div>
+                <span class="mockup-tab-label">Groups</span>
+              </div>
+              <div class="mockup-tab">
+                <div class="mockup-tab-icon"></div>
+                <span class="mockup-tab-label">Search</span>
+              </div>
+              <div class="mockup-tab">
+                <div class="mockup-tab-icon"></div>
+                <span class="mockup-tab-label">Settings</span>
+              </div>
             </div>
           </div>
         </div>
-        <p class="artifact-caption">The output of the decision anatomy. Spatial navigation — three persistent states, gesture-driven horizontal offset. Entries are tagged with signal intent. Thread provenance surfaces inline, not as a navigation destination.</p>
+        <p class="artifact-caption">Genericized app screen — standard iOS navigation, card list with category tags, four-tab navigation. The content reads as a design productivity tool without referencing any specific product.</p>
       </div>
 
     </div>
