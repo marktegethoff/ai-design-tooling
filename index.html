@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EPS.xd OS — How We Claude</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="sds-topnav">
+  <div class="topnav-inner">
+    <div class="topnav-brand">
+      <span class="brand-label">EPS.xd OS</span>
+      <span class="brand-tag">Design AI Infrastructure</span>
+    </div>
+    <ul class="topnav-links">
+      <li><a href="#" onclick="showPage('page-home')" class="nav-link active" id="nav-home">Overview</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-link" onclick="toggleDropdown('dd-system')">The System <span class="material-symbols-outlined icon-sm">expand_more</span></a>
+        <ul class="dropdown" id="dd-system">
+          <li><a href="#" onclick="showPage('page-behavioral-contract')">Behavioral Contract</a></li>
+          <li><a href="#" onclick="showPage('page-agents')">Agents</a></li>
+          <li><a href="#" onclick="showPage('page-skills')">Skills</a></li>
+          <li><a href="#" onclick="showPage('page-memory')">Memory</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#" class="nav-link" onclick="toggleDropdown('dd-pillars')">Five Pillars <span class="material-symbols-outlined icon-sm">expand_more</span></a>
+        <ul class="dropdown" id="dd-pillars">
+          <li><a href="#" onclick="showPage('page-governance')">Governance</a></li>
+          <li><a href="#" onclick="showPage('page-vocabulary')">Vocabulary</a></li>
+          <li><a href="#" onclick="showPage('page-onboarding')">Onboarding</a></li>
+          <li><a href="#" onclick="showPage('page-ceremony')">Commit Ceremony</a></li>
+          <li><a href="#" onclick="showPage('page-proof')">Capability Proof</a></li>
+        </ul>
+      </li>
+      <li><a href="#" onclick="showPage('page-case-study')" class="nav-link" id="nav-case-study">Case Study</a></li>
+      <li><a href="#" onclick="showPage('page-setup')" class="nav-link" id="nav-setup">Setup</a></li>
+      <li><a href="#" onclick="showPage('page-reference')" class="nav-link" id="nav-reference">Reference</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- PAGE: HOME                                                    -->
+<!-- ============================================================ -->
+<div class="page active" id="page-home">
+
+  <div class="page-hero page-hero--dark">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">EPS.xd OS</p>
+      <h1 class="hero-title">This is how we Claude.</h1>
+      <p class="hero-subtitle">Not a training program. A system. How EPS.xd designers use Claude Code — structured, shared, and built to compound as the team learns.</p>
+      <div class="hero-actions">
+        <button class="sds-btn sds-btn--primary sds-btn--md" onclick="showPage('page-case-study')">Read the Case Study</button>
+        <button class="sds-btn sds-btn--ghost sds-btn--md" onclick="showPage('page-setup')">Get Started</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-section home-section--warm">
+    <div class="section-inner">
+      <h2 class="section-title">Two layers. One system.</h2>
+      <p class="section-body"><a href="https://github.com/richhemsley3/claude-for-design" target="_blank">Claude for Design</a> teaches the mechanics — terminal, git, prompting, CLAUDE.md syntax. That's the foundation. EPS.xd OS is the layer above it: how <em>we</em> use those mechanics, what our behavioral contracts look like, how we share context as a team, and how we get better together over time. You need both. Start with mechanics if you're new. Come here when you're ready to build the system.</p>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <p class="compare-label">Claude for Design</p>
+          <p class="compare-desc">Mechanics curriculum. How to use Claude Code: terminal, git, prompting, CLAUDE.md syntax, 8-week program.</p>
+        </div>
+        <div class="compare-divider">
+          <span class="material-symbols-outlined">add</span>
+        </div>
+        <div class="compare-card compare-card--highlight">
+          <p class="compare-label">EPS.xd OS — this site</p>
+          <p class="compare-desc">How we Claude. Our behavioral contracts. Our shared context structure. Our team vocabulary. Our institutional memory. How one EPS.xd designer built a production product solo — and what that means for all of us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+      <h2 class="section-title">How the system is structured</h2>
+      <p class="section-body">Five things our team needs to make this work. Each one covers a different need. None overlaps. All five are in place here — use the nav to go deep on any of them.</p>
+
+      <div class="concept-grid">
+        <div class="concept-card" onclick="showPage('page-proof')">
+          <span class="material-symbols-outlined concept-icon">rocket_launch</span>
+          <p class="concept-number">01</p>
+          <h3 class="concept-title">Capability Proof</h3>
+          <p class="concept-desc">A real demonstration of what one designer can build with this system. Creates pull. Senior designers respond to proof, not process documentation.</p>
+          <p class="concept-action">Read the case study →</p>
+        </div>
+        <div class="concept-card" onclick="showPage('page-vocabulary')">
+          <span class="material-symbols-outlined concept-icon">contract</span>
+          <p class="concept-number">02</p>
+          <h3 class="concept-title">Vocabulary</h3>
+          <p class="concept-desc">Calling a CLAUDE.md a "behavioral contract" — not a config file — changes how designers relate to maintaining it. Vocabulary determines behavior.</p>
+          <p class="concept-action">Learn the framing →</p>
+        </div>
+        <div class="concept-card" onclick="showPage('page-governance')">
+          <span class="material-symbols-outlined concept-icon">account_tree</span>
+          <p class="concept-number">03</p>
+          <h3 class="concept-title">Governance</h3>
+          <p class="concept-desc">A three-layer inheritance structure — org → team → personal — so shared context is always present without overriding team autonomy.</p>
+          <p class="concept-action">See the structure →</p>
+        </div>
+        <div class="concept-card" onclick="showPage('page-onboarding')">
+          <span class="material-symbols-outlined concept-icon">login</span>
+          <p class="concept-number">04</p>
+          <h3 class="concept-title">Onboarding</h3>
+          <p class="concept-desc">New designers start within the team's behavioral contract, not a blank CLI. Context arrives first; tools operate within it.</p>
+          <p class="concept-action">See the setup →</p>
+        </div>
+        <div class="concept-card" onclick="showPage('page-ceremony')">
+          <span class="material-symbols-outlined concept-icon">commit</span>
+          <p class="concept-number">05</p>
+          <h3 class="concept-title">Commit Ceremony</h3>
+          <p class="concept-desc">One sentence at the end of every team session. Three months of that and you have institutional memory the AI can use.</p>
+          <p class="concept-action">See the ritual →</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-section home-section--warm">
+    <div class="section-inner">
+      <h2 class="section-title">We start with proof, not setup</h2>
+      <p class="section-body">The sequence matters. If you come to us asking for the tool setup first, we'll show you the capability proof first. That's intentional — the system doesn't land until you've seen what it makes possible.</p>
+
+      <div class="sequence-rail">
+        <div class="sequence-step">
+          <span class="seq-num">1</span>
+          <div class="seq-body">
+            <p class="seq-title">Capability Proof</p>
+            <p class="seq-desc">Creates pull. Establishes why.</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
+        <div class="sequence-step">
+          <span class="seq-num">2</span>
+          <div class="seq-body">
+            <p class="seq-title">Vocabulary</p>
+            <p class="seq-desc">Changes the mental model before any setup begins.</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
+        <div class="sequence-step">
+          <span class="seq-num">3</span>
+          <div class="seq-body">
+            <p class="seq-title">Governance</p>
+            <p class="seq-desc">Establishes the inheritance structure.</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
+        <div class="sequence-step">
+          <span class="seq-num">4</span>
+          <div class="seq-body">
+            <p class="seq-title">Onboarding</p>
+            <p class="seq-desc">Entry point for new team members.</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined seq-arrow">arrow_forward</span>
+        <div class="sequence-step">
+          <span class="seq-num">5</span>
+          <div class="seq-body">
+            <p class="seq-title">Commit Ceremony</p>
+            <p class="seq-desc">Sustains the system over time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: BEHAVIORAL CONTRACT                                     -->
+<!-- ============================================================ -->
+<div class="page" id="page-behavioral-contract">
+  <div class="page-hero page-hero--blue">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">The System</p>
+      <h1 class="hero-title">The Behavioral Contract</h1>
+      <p class="hero-subtitle">A CLAUDE.md is not a config file. It is a contract that governs how your AI collaborator behaves — encoding your design philosophy, decision hierarchy, and constraints into every session.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+      <h2 class="section-title">What changes when you name it correctly</h2>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <p class="compare-label">Called a "config file"</p>
+          <p class="compare-desc">Designers treat it as IT setup. It gets written once, never updated, and becomes stale within a month. Claude's behavior drifts from team standards. No one feels responsible for maintaining it.</p>
+        </div>
+        <div class="compare-divider"><span class="material-symbols-outlined">compare_arrows</span></div>
+        <div class="compare-card compare-card--highlight">
+          <p class="compare-label">Called a "behavioral contract"</p>
+          <p class="compare-desc">Every edit becomes a design decision with consequence. Designers debate what goes in. Updating it feels like craft, not housekeeping. The contract evolves with the team's standards.</p>
+        </div>
+      </div>
+
+      <div class="callout callout--insight">
+        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <div>
+          <p class="callout-title">The live demo is required</p>
+          <p>The phrase only lands if a designer edits the CLAUDE.md and immediately sees AI behavior change in response. Without that visceral before/after, "behavioral contract" is just a slogan. Start every introduction with a live edit and its consequence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-section home-section--warm">
+    <div class="section-inner">
+      <h2 class="section-title">What belongs in a behavioral contract</h2>
+
+      <div class="concept-grid concept-grid--3">
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">gavel</span>
+          <h3 class="concept-title">Non-negotiables</h3>
+          <p class="concept-desc">Brand rules, IP handling, accessibility floor, tone. These are the org layer — they must never be overridden downstream.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">design_services</span>
+          <h3 class="concept-title">Team standards</h3>
+          <p class="concept-desc">Design system tokens, component vocabulary, platform conventions, decision hierarchy. How this team makes decisions.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">psychology</span>
+          <h3 class="concept-title">Process philosophy</h3>
+          <p class="concept-desc">What the AI should never do. What it should always do. How it should surface uncertainty. Anti-patterns that are treated as defects.</p>
+        </div>
+      </div>
+
+      <div class="callout callout--warning">
+        <span class="material-symbols-outlined callout-icon">warning</span>
+        <div>
+          <p class="callout-title">Agents and skills are not guardrails</p>
+          <p>Claude Code agents and workflow skills encode <em>process</em>, not enforcement. They guide the sequence of work and surface the right questions — they do not prevent bad output or enforce compliance. Judgment remains with the designer. The behavioral contract is a statement of intent, not a safety net.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+      <h2 class="section-title">The decision hierarchy</h2>
+      <p class="section-body">When Claude makes a judgment call, what order should it apply criteria? Encoding this explicitly prevents arbitrary output.</p>
+
+      <div class="ordered-list">
+        <div class="ol-item"><span class="ol-num">1</span><div><p class="ol-title">Structural correctness</p><p class="ol-desc">Does the solution solve the actual problem?</p></div></div>
+        <div class="ol-item"><span class="ol-num">2</span><div><p class="ol-title">Conceptual clarity</p><p class="ol-desc">Is the concept legible without explanation?</p></div></div>
+        <div class="ol-item"><span class="ol-num">3</span><div><p class="ol-title">System coherence</p><p class="ol-desc">Does it fit the design system and platform conventions?</p></div></div>
+        <div class="ol-item"><span class="ol-num">4</span><div><p class="ol-title">Reduction of parts</p><p class="ol-desc">Can anything be removed without losing function?</p></div></div>
+        <div class="ol-item"><span class="ol-num">5</span><div><p class="ol-title">Craft precision</p><p class="ol-desc">Is the execution correct at the detail level?</p></div></div>
+        <div class="ol-item"><span class="ol-num">6</span><div><p class="ol-title">Visual refinement</p><p class="ol-desc">Does it look right?</p></div></div>
+      </div>
+
+      <div class="callout callout--tip">
+        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <div><p>Add this hierarchy to your team CLAUDE.md verbatim. When Claude produces output that prioritizes visual polish over structural correctness, the hierarchy is missing or not being enforced through prompting.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: AGENTS                                                  -->
+<!-- ============================================================ -->
+<div class="page" id="page-agents">
+  <div class="page-hero page-hero--blue">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">The System</p>
+      <h1 class="hero-title">Agents</h1>
+      <p class="hero-subtitle">Specialist agents are AI personas with defined scope, model, and tools. They are not guardrails — they are structured collaborators that apply a specific lens to a problem.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <div class="callout callout--warning">
+        <span class="material-symbols-outlined callout-icon">warning</span>
+        <div>
+          <p class="callout-title">Agents are not bulletproof</p>
+          <p>An agent's defined scope is a behavioral instruction, not enforcement. Claude will follow the scope while the conversation is fresh — but in long sessions, or with contradictory prompts, it can drift. Check agent output the same way you check any AI output: read it, verify it, apply judgment.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 2rem;">Two categories of agent</h2>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <p class="compare-label">Discipline agents</p>
+          <p class="compare-desc">Single-purpose specialists. Each applies one lens: Historian surfaces precedent. Critic removes unnecessary elements. Architect defines data models. Designer specifies interaction states. They don't make final decisions — they bring specific analysis.</p>
+        </div>
+        <div class="compare-divider"><span class="material-symbols-outlined">add</span></div>
+        <div class="compare-card compare-card--highlight">
+          <p class="compare-label">Workflow orchestrators</p>
+          <p class="compare-desc">Skills that route work through a sequence of discipline agents. A design workflow might invoke Historian → Strategist → Architect → Critic → Designer in order, each building on the previous. The orchestrator manages the sequence; the designer approves each gate.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 2.5rem;">Model assignment by role</h2>
+      <p class="section-body">Assigning the right model to each agent reduces cost and latency without sacrificing quality. The pattern that works:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr><th>Model</th><th>Best for</th><th>Examples</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>Haiku</code></td><td>Classification, gates, brief structured tasks</td><td>Problem gate, design system validation, accessibility checks</td></tr>
+          <tr><td><code>Sonnet</code></td><td>Implementation, synthesis, multi-step reasoning</td><td>Architect, Designer, iOS Engineer, QA, research compilation</td></tr>
+          <tr><td><code>Opus</code></td><td>Taste, quality verdicts, final review</td><td>Creative Director, Distinguished Engineer, facilitated reduction</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout--insight">
+        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <div><p>The model assignment matters most at the quality gate. Running everything through Sonnet is fine for drafting; the final ship/no-ship verdict should go to Opus. The cost difference is negligible per session; the quality difference on taste-level decisions is significant.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: SKILLS                                                  -->
+<!-- ============================================================ -->
+<div class="page" id="page-skills">
+  <div class="page-hero page-hero--blue">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">The System</p>
+      <h1 class="hero-title">Skills</h1>
+      <p class="hero-subtitle">Skills are workflow orchestrators — slash commands that invoke a defined sequence of agents, gates, and pauses. They encode process, not just prompts.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <h2 class="section-title">How skills differ from prompts</h2>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <p class="compare-label">A prompt</p>
+          <p class="compare-desc">"Design the navigation model for this app." Claude responds once. The quality depends entirely on how well the prompt was written. No gates. No structure. No checkpoints.</p>
+        </div>
+        <div class="compare-divider"><span class="material-symbols-outlined">compare_arrows</span></div>
+        <div class="compare-card compare-card--highlight">
+          <p class="compare-label">A skill</p>
+          <p class="compare-desc">/studio-design triggers: check prior decisions → Historian pass → Strategist evaluation → Architect constraints → Critic reduction → Designer directions → Accessibility review. Pauses for approval at each gate. The designer controls the sequence.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 2.5rem;">Skill evolution</h2>
+      <p class="section-body">Skills evolve as you learn what sequence produces the best output. This is the arc from the EPS.xd OS case study:</p>
+
+      <div class="sequence-rail sequence-rail--vertical">
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">1</span>
+          <div class="seq-body">
+            <p class="seq-title">Simple slash commands</p>
+            <p class="seq-desc">Single-agent invocations with no structure. Fast to write, inconsistent output.</p>
+          </div>
+        </div>
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">2</span>
+          <div class="seq-body">
+            <p class="seq-title">Sequenced workflows</p>
+            <p class="seq-desc">Multi-agent sequences with pauses for approval. Consistent structure, but latency from sequential execution.</p>
+          </div>
+        </div>
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">3</span>
+          <div class="seq-body">
+            <p class="seq-title">Parallel orchestration</p>
+            <p class="seq-desc">Outer background agents spawn inner specialists simultaneously. One notification per phase instead of one per agent. Dramatically lower perceived latency.</p>
+          </div>
+        </div>
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">4</span>
+          <div class="seq-body">
+            <p class="seq-title">Multi-model workflows</p>
+            <p class="seq-desc">Skills that switch models by phase — Haiku for gates, Sonnet for synthesis, Opus for verdicts. Each phase uses the right model for the task.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout--tip">
+        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <div><p>Start with step 1. Build a skill when you repeat the same sequence three times and the sequence matters. Optimize latency only after the sequence is proven.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: MEMORY                                                  -->
+<!-- ============================================================ -->
+<div class="page" id="page-memory">
+  <div class="page-hero page-hero--blue">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">The System</p>
+      <h1 class="hero-title">Memory</h1>
+      <p class="hero-subtitle">Claude has no memory between sessions. Memory files solve this — structured context that loads at session start and accumulates decisions over time.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <h2 class="section-title">Two memory tiers</h2>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <p class="compare-label">Global memory</p>
+          <p class="compare-desc">Travels with you across all projects. Design foundations. Craft preferences. Process learnings. Things that are true about how you work regardless of what you're working on.</p>
+        </div>
+        <div class="compare-divider"><span class="material-symbols-outlined">add</span></div>
+        <div class="compare-card compare-card--highlight">
+          <p class="compare-label">Project memory</p>
+          <p class="compare-desc">Scoped to one product or team. Brand principles. System invariants. Decisions made. Things discarded and why. A new session picks up exactly where the last one left off.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">What belongs in memory vs. CLAUDE.md</h2>
+
+      <table class="data-table">
+        <thead>
+          <tr><th>Type</th><th>Goes in CLAUDE.md</th><th>Goes in Memory</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Design principles</td><td>Yes — behavioral rules</td><td>No</td></tr>
+          <tr><td>Decisions made this session</td><td>No</td><td>Yes — persists for next session</td></tr>
+          <tr><td>Directions discarded</td><td>No</td><td>Yes — prevents retreading</td></tr>
+          <tr><td>Anti-patterns</td><td>Yes — governs behavior</td><td>No</td></tr>
+          <tr><td>Key file locations</td><td>Sometimes</td><td>Yes — project-specific state</td></tr>
+          <tr><td>Named constraints</td><td>Yes if permanent</td><td>Yes if evolving</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout--warning">
+        <span class="material-symbols-outlined callout-icon">warning</span>
+        <div>
+          <p class="callout-title">Memory files go stale</p>
+          <p>A memory entry that names a file, function, or decision is a claim about the state of the world when it was written. Before acting on recalled memory, verify it against the current state. Stale memory that contradicts current reality should be updated or removed, not followed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: GOVERNANCE                                              -->
+<!-- ============================================================ -->
+<div class="page" id="page-governance">
+  <div class="page-hero page-hero--dark">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Pillar 03</p>
+      <h1 class="hero-title">Governance</h1>
+      <p class="hero-subtitle">A three-layer inheritance structure so shared context is always present without overriding team autonomy.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <div class="callout callout--insight">
+        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <div><p>Claude Code supports <code>@filename</code> imports inside CLAUDE.md natively. The three-layer stack uses this — no custom tooling required. Each layer imports the layer above it and extends it.</p></div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2rem;">The three layers</h2>
+
+      <div class="ordered-list">
+        <div class="ol-item">
+          <span class="ol-num">1</span>
+          <div>
+            <p class="ol-title">Org layer — <code>claude-for-eps.md</code></p>
+            <p class="ol-desc">Capital One non-negotiables. IP handling. Accessibility floor. Brand voice. 3–5 rules maximum. Thin by design — opinionated only on what the org must enforce. Owned by AI Tooling. Changes require review.</p>
+          </div>
+        </div>
+        <div class="ol-item">
+          <span class="ol-num">2</span>
+          <div>
+            <p class="ol-title">Team layer — <code>CLAUDE.md</code></p>
+            <p class="ol-desc">Platform-specific context. Design system vocabulary. Component library rules. Team decision hierarchy. Behavioral contract for this team's AI sessions. Owned by the team lead. Updated at retrospectives.</p>
+          </div>
+        </div>
+        <div class="ol-item">
+          <span class="ol-num">3</span>
+          <div>
+            <p class="ol-title">Personal layer — bottom of your CLAUDE.md</p>
+            <p class="ol-desc">In-progress work, personal style preferences, temporary context. Never overwrites org or team layers. Added to the bottom of the team file or in a personal <code>@me.md</code> import.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyable-block">
+        <div class="code-header"><span>Team CLAUDE.md — layer import pattern</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code># @claude-for-eps.md
+# (org layer imports automatically — do not edit above this line)
+
+# [TEAM NAME] Design Team
+# Platform: [Platform name]
+
+## Team Standards
+[Your team-specific content here]
+
+## Design System
+[Token names, component vocab, platform conventions]
+
+## Decision Hierarchy
+1. Structural correctness
+2. Conceptual clarity
+3. System coherence
+4. Reduction of parts
+5. Craft precision
+6. Visual refinement
+
+## Anti-patterns (treat as defects)
+- [Your team's specific anti-patterns]
+
+## @me.md
+# (personal overrides — do not commit)</code></pre>
+      </div>
+
+      <div class="callout callout--warning">
+        <span class="material-symbols-outlined callout-icon">warning</span>
+        <div>
+          <p class="callout-title">Keep the org layer thin</p>
+          <p>If the org layer becomes opinionated about craft — component patterns, visual style, prompt strategy — senior designers will reject it as top-down prescription. The org layer's authority comes from its restraint. It governs only what the org must govern.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: VOCABULARY                                              -->
+<!-- ============================================================ -->
+<div class="page" id="page-vocabulary">
+  <div class="page-hero page-hero--dark">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Pillar 02</p>
+      <h1 class="hero-title">Vocabulary</h1>
+      <p class="hero-subtitle">The words designers use to describe Claude Code determine how they behave with it. Vocabulary is not soft — it governs whether the system compounds or stagnates.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+      <h2 class="section-title">The critical reframes</h2>
+
+      <table class="data-table">
+        <thead>
+          <tr><th>Old framing</th><th>New framing</th><th>Why it matters</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Training program</td>
+            <td>Infrastructure installation</td>
+            <td>Training implies receiving. Infrastructure implies building something that compounds.</td>
+          </tr>
+          <tr>
+            <td>Config file</td>
+            <td>Behavioral contract</td>
+            <td>Config files get ignored. Contracts get debated, updated, and owned.</td>
+          </tr>
+          <tr>
+            <td>AI tool</td>
+            <td>AI collaborator</td>
+            <td>Tools are passive. Collaborators have context, preferences, and a working relationship.</td>
+          </tr>
+          <tr>
+            <td>Prompt</td>
+            <td>Brief</td>
+            <td>Designers already know how to write briefs. This reuse of existing vocabulary reduces resistance.</td>
+          </tr>
+          <tr>
+            <td>Getting Claude to do X</td>
+            <td>Directing the collaborator</td>
+            <td>Agency stays with the designer. The AI executes under direction, not autonomously.</td>
+          </tr>
+          <tr>
+            <td>AI-generated output</td>
+            <td>AI-assisted output</td>
+            <td>Authorship remains with the designer. This is not a semantic nicety — it affects IP ownership framing.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout--insight">
+        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <div>
+          <p class="callout-title">Introduce vocabulary before tools</p>
+          <p>Run the vocabulary workshop before the first Claude Code session. Designers who arrive at the terminal already knowing what a behavioral contract is will configure their CLAUDE.md differently — more deliberately — than designers who encounter the file without that frame.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: ONBOARDING                                              -->
+<!-- ============================================================ -->
+<div class="page" id="page-onboarding">
+  <div class="page-hero page-hero--dark">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Pillar 04</p>
+      <h1 class="hero-title">Onboarding</h1>
+      <p class="hero-subtitle">New designers should start within the team's behavioral contract — not from a blank CLI. Context arrives first. Tools operate within it.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <div class="callout callout--warning">
+        <span class="material-symbols-outlined callout-icon">warning</span>
+        <div>
+          <p class="callout-title">Self-service terminal install fails for non-technical designers</p>
+          <p>A "clone the repo and run one command" onboarding only works if every prerequisite is already in place. At Capital One, they won't be. The install must be owned by IT — pre-deployed as part of the standard design tooling package via MDM. Designers should never touch the command line for setup.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2rem;">What the onboarding package contains</h2>
+
+      <div class="concept-grid concept-grid--3">
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">folder</span>
+          <h3 class="concept-title">Team CLAUDE.md</h3>
+          <p class="concept-desc">Pre-populated with team standards, design system, decision hierarchy, and org layer import. Ready to use on day one.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">smart_toy</span>
+          <h3 class="concept-title">Discipline agents</h3>
+          <p class="concept-desc">The team's agent set installed to <code>~/.claude/agents/</code>. New members get the same specialists as everyone else from first session.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">terminal</span>
+          <h3 class="concept-title">Workflow skills</h3>
+          <p class="concept-desc">Team-validated workflow skills installed and ready. The right sequence for design, review, and implementation is already encoded.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2rem;">The first session experience</h2>
+      <p class="section-body">The designer's first Claude Code session should demonstrate the behavioral contract working — not require them to build it. Recommended first session structure:</p>
+
+      <div class="ordered-list">
+        <div class="ol-item"><span class="ol-num">1</span><div><p class="ol-title">Show the team CLAUDE.md</p><p class="ol-desc">Read it together. Explain what each section governs and why it's there.</p></div></div>
+        <div class="ol-item"><span class="ol-num">2</span><div><p class="ol-title">Make one edit, see the consequence</p><p class="ol-desc">Add a rule. Run a session. Show how Claude's behavior changed. This is the behavioral contract demonstration.</p></div></div>
+        <div class="ol-item"><span class="ol-num">3</span><div><p class="ol-title">Run one real task</p><p class="ol-desc">A real task from their actual work, not a tutorial exercise. The first session should produce something they can use.</p></div></div>
+        <div class="ol-item"><span class="ol-num">4</span><div><p class="ol-title">Add one personal context entry</p><p class="ol-desc">What are you working on? What decisions have you made? Their first memory entry, written together.</p></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: COMMIT CEREMONY                                         -->
+<!-- ============================================================ -->
+<div class="page" id="page-ceremony">
+  <div class="page-hero page-hero--dark">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Pillar 05</p>
+      <h1 class="hero-title">The Commit Ceremony</h1>
+      <p class="hero-subtitle">One sentence at the end of every team session. Three months of that and you have institutional memory the AI can use.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <h2 class="section-title">Why shared knowledge systems fail</h2>
+      <p class="section-body">Every team has tried a shared knowledge system. Most die within six weeks. The cause is always the same: contribution is voluntary, asynchronous, and competes with real work. The commit ceremony solves this by making contribution synchronous with work — it's the closing ritual of every session, not a separate task.</p>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <p class="compare-label">Voluntary contribution</p>
+          <p class="compare-desc">"Remember to update the docs after the session." Nobody does. The record is always 3 weeks behind. New members inherit an incomplete picture.</p>
+        </div>
+        <div class="compare-divider"><span class="material-symbols-outlined">compare_arrows</span></div>
+        <div class="compare-card compare-card--highlight">
+          <p class="compare-label">The commit ceremony</p>
+          <p class="compare-desc">The session isn't closed until someone writes the sentence. One rotation. One sentence. The record grows every session without any separate effort.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">What makes a good entry</h2>
+
+      <table class="data-table">
+        <thead><tr><th>Type</th><th>Good entry</th><th>Weak entry</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Decision</td>
+            <td>"We use a single bottom sheet for all filter states — multiple sheets created context-switching overhead."</td>
+            <td>"We decided on the filter design."</td>
+          </tr>
+          <tr>
+            <td>Discarded direction</td>
+            <td>"Rejected tab-based navigation — tabs imply parallel content, our flows are sequential."</td>
+            <td>"We tried tabs and didn't like them."</td>
+          </tr>
+          <tr>
+            <td>Named constraint</td>
+            <td>"The transaction list must render within 200ms — anything slower breaks the sense of responsiveness users expect from banking."</td>
+            <td>"Performance matters for the transaction list."</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout--warning">
+        <span class="material-symbols-outlined callout-icon">warning</span>
+        <div>
+          <p class="callout-title">Git is the wrong first surface for non-technical designers</p>
+          <p>Git write access at an enterprise requires an access request that can take 2–4 weeks. Terminal commits create social pressure to appear competent; designers who don't know how will skip rather than admit it. Use a <strong>#design-decisions Slack channel</strong> with a one-sentence template as the commit surface. Sync to the shared repo weekly in the background. Designers never touch git to participate in the ceremony.</p>
+        </div>
+      </div>
+
+      <div class="copyable-block">
+        <div class="code-header"><span>Slack template — commit ceremony entry</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code>📝 [Team] [Date]
+Decision / Direction discarded / Constraint named:
+[One sentence. Include the reason — "because X" is the part that makes it useful later.]</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: CAPABILITY PROOF                                        -->
+<!-- ============================================================ -->
+<div class="page" id="page-proof">
+  <div class="page-hero page-hero--dark">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Pillar 01</p>
+      <h1 class="hero-title">The Capability Proof</h1>
+      <p class="hero-subtitle">Senior designers respond to proof, not process documentation. The adoption hook is not a training deck — it is a real artifact built by a real designer using the real methodology.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <div class="callout callout--insight">
+        <span class="material-symbols-outlined callout-icon">lightbulb</span>
+        <div>
+          <p class="callout-title">The proof must be honest, not polished</p>
+          <p>A case study that only shows what worked reads as marketing. The proof that moves senior designers shows where the methodology was required (not just helpful), where judgment was irreplaceable, and what the system couldn't solve. Honesty is what makes it credible.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2rem;">What the proof must demonstrate</h2>
+
+      <div class="concept-grid concept-grid--3">
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">person</span>
+          <h3 class="concept-title">Designer in control</h3>
+          <p class="concept-desc">The AI doing labor the designer directed — not the AI making decisions the designer accepted. Every output visible; every judgment owned.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">build</span>
+          <h3 class="concept-title">AI doing real labor</h3>
+          <p class="concept-desc">Not summaries or text. Architecture decisions, code, design system components, structured analysis — work the designer would have found tedious or inaccessible alone.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">verified</span>
+          <h3 class="concept-title">Output at the right quality bar</h3>
+          <p class="concept-desc">The end product must meet the standard senior designers recognize as legitimate. A rough prototype proves a different (weaker) thing than a production-quality artifact.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">The on-ramp is required</h2>
+      <p class="section-body">Without an immediate next action, the proof converts attention into admiration, not adoption. Every proof asset must link directly to a workshop, a template, or a setup path. The designer finishes reading and has one clear thing to do next.</p>
+
+      <div class="callout callout--tip">
+        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <div><p>The case study for EPS.xd OS is linked on the next page. It documents the methodology used to build a production-quality digital product as a solo designer — the full arc, including what broke, what the system couldn't solve, and where judgment was irreplaceable.</p>
+        <p style="margin-top:0.5rem;"><a href="#" onclick="showPage('page-case-study')">Read the case study →</a></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: CASE STUDY                                              -->
+<!-- ============================================================ -->
+<div class="page" id="page-case-study">
+  <div class="page-hero page-hero--dark">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Case Study</p>
+      <h1 class="hero-title">One EPS.xd designer. Full production product. This is the proof.</h1>
+      <p class="hero-subtitle">Your AI Tooling lead built a production-quality digital product solo — full design system, AI features, sync infrastructure, architecture. Using exactly the methodology described in this site. Here's the full arc.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <div class="callout callout--tip">
+        <span class="material-symbols-outlined callout-icon">tips_and_updates</span>
+        <div><p>The product in this case study is private IP and is not referenced here. What is documented is the methodology — the system structure, the decision-making process, the evolution of skills and agents, and the honest account of where the system required human judgment.</p></div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2rem;">What was built</h2>
+      <p class="section-body">A production iOS application — full design system, database layer, authentication, AI-powered organization features, sync infrastructure, and a dedicated design canvas for prototyping. Built by one designer. No engineering team. No external contractors. Every architectural decision, every design system token, every implementation was directed through the methodology you're reading about here.</p>
+      <p class="section-body">17 tracked sessions. 64 architectural decisions logged. 23 specialist agents deployed. 10 workflow skills built and iterated. The methodology wasn't imported — it was designed and evolved as the product grew. What you see in EPS.xd OS is what actually worked.</p>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">The methodology arc</h2>
+
+      <div class="sequence-rail sequence-rail--vertical">
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">1</span>
+          <div class="seq-body">
+            <p class="seq-title">First principles, not features</p>
+            <p class="seq-desc">Every system was reduced to its structure before it was built. No feature was added without passing a necessity test: Is this required? What does removing it cost? The CLAUDE.md encoded this discipline from session one.</p>
+          </div>
+        </div>
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">2</span>
+          <div class="seq-body">
+            <p class="seq-title">Discipline agents before implementation</p>
+            <p class="seq-desc">No implementation began without a specification. No specification was written without a design review. No design was approved without a Critic pass. The sequence was enforced by workflow skills — not willpower.</p>
+          </div>
+        </div>
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">3</span>
+          <div class="seq-body">
+            <p class="seq-title">Memory as institutional record</p>
+            <p class="seq-desc">Every significant decision was committed to the memory system with its rationale. Sessions 15 months apart referenced decisions made in session 2. The AI never re-litigated closed questions because the record was clear.</p>
+          </div>
+        </div>
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">4</span>
+          <div class="seq-body">
+            <p class="seq-title">Skills evolved with the work</p>
+            <p class="seq-desc">The first skills were single-agent slash commands. By session 10, they were multi-agent workflows with quality gates. By session 17, they used parallel orchestration with model switching by phase. The methodology grew as confidence in each layer was established.</p>
+          </div>
+        </div>
+        <div class="sequence-step sequence-step--vertical">
+          <span class="seq-num">5</span>
+          <div class="seq-body">
+            <p class="seq-title">The quality gate held</p>
+            <p class="seq-desc">Every significant artifact — design, implementation, specification — passed through a Creative Director or Distinguished Engineer verdict before it moved forward. SHIP / REVISE / REJECT. Not all work shipped on the first pass. The gate was real.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">Where the system required judgment</h2>
+      <p class="section-body">This is the part most case studies omit. The methodology is not a replacement for judgment — it is a structure that makes judgment more legible.</p>
+
+      <div class="concept-grid concept-grid--3">
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">fork_right</span>
+          <h3 class="concept-title">When to skip the workflow</h3>
+          <p class="concept-desc">Small tasks don't warrant the full methodology. Knowing when a bug fix is just a bug fix — and when it reveals a structural problem requiring a full design pass — is a judgment call the system cannot make for you.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">psychology_alt</span>
+          <h3 class="concept-title">When the agent is wrong</h3>
+          <p class="concept-desc">Agents produce output shaped by their prompts. A Critic that removes too aggressively, a Designer that proposes the obvious solution — the output must be evaluated, not accepted. The agent is a structured prompt, not an authority.</p>
+        </div>
+        <div class="concept-card">
+          <span class="material-symbols-outlined concept-icon">balance</span>
+          <h3 class="concept-title">When principles conflict</h3>
+          <p class="concept-desc">The decision hierarchy resolves most conflicts. When it doesn't — when structural correctness and system coherence point in opposite directions — the resolution requires a human who understands both what the product is and what it's becoming.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">What this means for your team</h2>
+      <p class="section-body">The methodology described in this case study is what EPS.xd OS is built from. Not a framework imported from an AI vendor. Not a training program designed for beginners. A system built under real constraints, on real work, iterated across a year of production development.</p>
+      <p class="section-body">The five pillars in this site are not theoretical. They are the distillation of what made the difference between a session that compounded and a session that wasted time.</p>
+
+      <div class="action-bridge">
+        <p class="action-label">Ready to start?</p>
+        <button class="sds-btn sds-btn--primary sds-btn--md" onclick="showPage('page-setup')">See the Setup Guide →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: SETUP                                                   -->
+<!-- ============================================================ -->
+<div class="page" id="page-setup">
+  <div class="page-hero page-hero--blue">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Setup Guide</p>
+      <h1 class="hero-title">Getting your team on the system</h1>
+      <p class="hero-subtitle">Sequence matters. Follow this order. Do not start with infrastructure.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <h2 class="section-title">For AI Tooling leads</h2>
+
+      <div class="ordered-list">
+        <div class="ol-item">
+          <span class="ol-num">1</span>
+          <div>
+            <p class="ol-title">Share the capability proof first</p>
+            <p class="ol-desc">Run the case study at a design all-hands or team session before any tooling setup. Senior designers must see what the system produces before they'll engage with how it's structured.</p>
+          </div>
+        </div>
+        <div class="ol-item">
+          <span class="ol-num">2</span>
+          <div>
+            <p class="ol-title">Run the vocabulary workshop</p>
+            <p class="ol-desc">One session, 45 minutes. Introduce: behavioral contract, design intelligence infrastructure, brief (not prompt), direct/assisted/authored. End with a live demo of a CLAUDE.md edit changing Claude's behavior.</p>
+          </div>
+        </div>
+        <div class="ol-item">
+          <span class="ol-num">3</span>
+          <div>
+            <p class="ol-title">Draft the org layer CLAUDE.md</p>
+            <p class="ol-desc">3–5 rules. IP handling. Accessibility floor. Brand voice non-negotiables. Get legal review. This is the only document that requires that process — keep it thin so it clears quickly.</p>
+          </div>
+        </div>
+        <div class="ol-item">
+          <span class="ol-num">4</span>
+          <div>
+            <p class="ol-title">Build a team CLAUDE.md template</p>
+            <p class="ol-desc">One template per platform team. Import the org layer. Add team-specific sections. Include the decision hierarchy. Give teams the template at their first team session, not before — they need the vocabulary to use it well.</p>
+          </div>
+        </div>
+        <div class="ol-item">
+          <span class="ol-num">5</span>
+          <div>
+            <p class="ol-title">Work with IT on the onboarding package</p>
+            <p class="ol-desc">Define what needs to be pre-deployed: Claude Code installation, team CLAUDE.md, agent directory, skills directory. Provide a package spec; IT handles deployment via MDM. Target: zero terminal interaction for setup.</p>
+          </div>
+        </div>
+        <div class="ol-item">
+          <span class="ol-num">6</span>
+          <div>
+            <p class="ol-title">Launch the commit ceremony</p>
+            <p class="ol-desc">Start with a #design-decisions Slack channel. Give teams the entry template. Run it for 4 weeks before evaluating whether a git-backed memory sync is worth adding. The ritual must exist before the infrastructure matters.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout--warning">
+        <span class="material-symbols-outlined callout-icon">warning</span>
+        <div>
+          <p class="callout-title">Do not skip steps 1 and 2</p>
+          <p>Teams that start with infrastructure setup (step 5) without the proof and vocabulary foundation (steps 1–2) treat the CLAUDE.md as a config file, skip the commit ceremony after two weeks, and conclude "it didn't really change how we work." The sequence is causal, not sequential.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">For individual designers</h2>
+
+      <div class="ordered-list">
+        <div class="ol-item"><span class="ol-num">1</span><div><p class="ol-title">Read your team CLAUDE.md before your first session</p><p class="ol-desc">Not skim — read. Understand what each section governs. This is the brief you're working within.</p></div></div>
+        <div class="ol-item"><span class="ol-num">2</span><div><p class="ol-title">Add one personal context entry on day one</p><p class="ol-desc">What are you working on? What decisions have you already made? What must not change? One paragraph at the bottom of your CLAUDE.md.</p></div></div>
+        <div class="ol-item"><span class="ol-num">3</span><div><p class="ol-title">Run your first real task, not a tutorial</p><p class="ol-desc">Pick something from your actual work. The first session should produce something you can use. Tutorials don't build the habit — real work does.</p></div></div>
+        <div class="ol-item"><span class="ol-num">4</span><div><p class="ol-title">Contribute to the commit ceremony from session one</p><p class="ol-desc">Even if your first entry is small. The habit is more important than the quality of early entries.</p></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE: REFERENCE                                               -->
+<!-- ============================================================ -->
+<div class="page" id="page-reference">
+  <div class="page-hero page-hero--blue">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Reference</p>
+      <h1 class="hero-title">Templates &amp; Reference</h1>
+      <p class="hero-subtitle">Copy-ready templates, vocabulary reference, and the anti-patterns that indicate the system is breaking down.</p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="section-inner">
+
+      <h2 class="section-title">Org layer CLAUDE.md — starter template</h2>
+
+      <div class="copyable-block">
+        <div class="code-header"><span>claude-for-eps.md</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code># EPS.xd — Org Layer Behavioral Contract
+# This file is imported by all team CLAUDE.md files.
+# Do not edit without AI Tooling review.
+
+## Non-Negotiables
+
+### IP and Data Handling
+- Never include real customer data, PII, or transaction details in prompts
+- All AI-assisted outputs are Capital One property; do not reference external products in output
+- When in doubt about data sensitivity, exclude it from the session
+
+### Accessibility
+- All designs must meet WCAG AA contrast minimum
+- Touch targets minimum 44x44pt
+- Every interactive element requires a screen reader label
+
+### Brand Voice
+- Clear over clever
+- Direct over decorative
+- Customer-first framing in all copy
+
+## AI Behavior Rules
+- AI assists; it does not author or decide
+- All AI output requires designer review and approval before use
+- Agents and skills are process guides, not guardrails — designer judgment is always required</code></pre>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">Team CLAUDE.md — starter template</h2>
+
+      <div class="copyable-block">
+        <div class="code-header"><span>CLAUDE.md — team template</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre><code># @claude-for-eps.md
+
+# [Platform Team Name] — Behavioral Contract
+# Platform: [e.g. Card, Auto, Home Lending]
+# Updated: [date]
+
+## What We're Building
+[One paragraph: the product surface, the user, the core job to be done]
+
+## Design System
+- Component library: [name + location]
+- Token system: [naming convention]
+- Spacing unit: [value]
+- Type scale: [reference]
+
+## Platform Conventions
+[List key conventions specific to your platform — navigation patterns, interaction models, data display standards]
+
+## Decision Hierarchy
+1. Structural correctness — does this solve the actual problem?
+2. Conceptual clarity — is the concept legible without explanation?
+3. System coherence — does it fit the design system?
+4. Reduction of parts — can anything be removed?
+5. Craft precision — is the execution detail correct?
+6. Visual refinement — does it look right?
+
+## Anti-Patterns (treat as defects)
+- Decorative UI elements with no structural function
+- Inconsistent spacing or type usage
+- Features added without a necessity test
+- AI output accepted without designer review
+
+## @me.md</code></pre>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem;">Warning signs the system is breaking down</h2>
+
+      <table class="data-table">
+        <thead><tr><th>Signal</th><th>Cause</th><th>Fix</th></tr></thead>
+        <tbody>
+          <tr><td>Team CLAUDE.md hasn't been edited in 4+ weeks</td><td>Treated as a config file, not a behavioral contract</td><td>Run a 20-min retrospective session — read it, update one section, commit the change</td></tr>
+          <tr><td>Commit ceremony entries are single words or missing</td><td>Ritual has become a checkbox</td><td>Read the last 5 entries aloud at the next session — low-quality entries are visible; high-quality ones model the behavior</td></tr>
+          <tr><td>New team members configure Claude from scratch</td><td>Onboarding package not deployed or out of date</td><td>Update the package; verify IT has the current version deployed</td></tr>
+          <tr><td>"The AI just does whatever it wants"</td><td>CLAUDE.md too thin or missing key behavioral rules</td><td>Identify the unwanted behavior, write the rule that prevents it, add it to the contract</td></tr>
+          <tr><td>Senior designers not using the system</td><td>Proof hasn't landed yet — they've seen training, not output</td><td>Demo a real artifact produced by the methodology; abstract capability claims don't move senior designers</td></tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
