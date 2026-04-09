@@ -669,6 +669,259 @@ code {
    ============================================================ */
 
 /* ============================================================
+   TEAM COMPARISON
+   ============================================================ */
+
+.team-comparison {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.team-col {
+  flex: 1;
+  padding: 1.5rem;
+  background: var(--color-white);
+}
+
+.team-col--highlight {
+  background: var(--color-highlight);
+  border-left: 1px solid var(--color-border);
+}
+
+.team-col-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.team-col--highlight .team-col-label { color: var(--color-accent); }
+
+.team-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.team-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-mid);
+}
+
+.team-list .material-symbols-outlined {
+  font-size: 16px !important;
+  color: var(--color-text-light);
+}
+
+.team-col--highlight .team-list .material-symbols-outlined { color: var(--color-accent); }
+
+.team-total {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.team-col--highlight .team-total { color: var(--color-accent); }
+
+.team-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  background: var(--color-warm-bg);
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  color: var(--color-text-light);
+}
+
+/* ============================================================
+   DECISION ANATOMY
+   ============================================================ */
+
+.decision-anatomy {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 1.5rem;
+}
+
+.da-node {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.da-node--verdict {
+  border-color: var(--color-accent);
+  background: var(--color-highlight);
+}
+
+.da-discipline {
+  background: var(--color-navy);
+  color: rgba(255,255,255,.85);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.875rem 1rem;
+  min-width: 110px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.da-node--verdict .da-discipline {
+  background: var(--color-accent);
+}
+
+.da-output {
+  padding: 0.875rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--color-text-mid);
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.da-connector {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.25rem 0 0.25rem 2.5rem;
+  color: var(--color-text-light);
+}
+
+.da-connector .material-symbols-outlined { font-size: 18px !important; }
+
+/* ============================================================
+   EVOLUTION TIMELINE
+   ============================================================ */
+
+.evolution-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.evo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.15s;
+}
+
+.evo-item:last-child { border-bottom: none; }
+.evo-item:hover { background: var(--color-highlight); }
+
+.evo-marker {
+  background: var(--color-navy);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+  min-width: 56px;
+  flex-shrink: 0;
+}
+
+.evo-num {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(255,255,255,.5);
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono);
+}
+
+.evo-body {
+  padding: 1.1rem 1.25rem;
+  flex: 1;
+}
+
+.evo-phase {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+}
+
+.evo-failure {
+  font-size: 0.82rem;
+  color: var(--color-text-mid);
+  line-height: 1.55;
+  margin-bottom: 0.4rem;
+}
+
+.evo-response {
+  font-size: 0.82rem;
+  color: var(--color-accent);
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+/* ============================================================
+   HONEST ACCOUNT
+   ============================================================ */
+
+.honest-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.honest-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.honest-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-border);
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+  line-height: 1;
+  min-width: 2.5rem;
+}
+
+.honest-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.6rem;
+}
+
+.honest-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-mid);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.honest-desc:last-child { margin-bottom: 0; }
+
+/* ============================================================
    FOOTER
    ============================================================ */
 
