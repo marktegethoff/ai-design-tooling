@@ -668,6 +668,34 @@ code {
    RESPONSIVE
    ============================================================ */
 
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  background: var(--color-navy-dark);
+  padding: 1.25rem 2rem;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,.35);
+}
+
+.footer-dot { opacity: 0.3; }
+
+.footer-inner a {
+  color: rgba(255,255,255,.4);
+  text-decoration: none;
+}
+.footer-inner a:hover { color: rgba(255,255,255,.7); }
+
 @media (max-width: 768px) {
   .topnav-links { display: none; }
   .hero-title { font-size: 1.8rem; }
