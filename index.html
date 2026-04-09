@@ -794,20 +794,154 @@ Decision / Direction discarded / Constraint named:
         <div class="team-col team-col--highlight">
           <p class="team-col-label">EPS.xd OS — deployed</p>
           <ul class="team-list">
-            <li><span class="material-symbols-outlined">smart_toy</span> 23 discipline agents</li>
-            <li><span class="material-symbols-outlined">terminal</span> 10 workflow skills</li>
-            <li><span class="material-symbols-outlined">history_edu</span> 64 architectural decisions logged</li>
-            <li><span class="material-symbols-outlined">commit</span> dev / beta / main release model</li>
-            <li><span class="material-symbols-outlined">category</span> Full design system — Web + iOS tokens</li>
-            <li><span class="material-symbols-outlined">deployed_code</span> Production iOS app shipped</li>
-            <li><span class="material-symbols-outlined">frame_inspect</span> Dedicated prototyping canvas</li>
-            <li><span class="material-symbols-outlined">verified</span> Quality gate: SHIP / REVISE / REJECT</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">smart_toy</span> 23 discipline agents</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">terminal</span> 10 workflow skills</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">history_edu</span> 64 architectural decisions logged</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">commit</span> dev / beta / main release model</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">category</span> Full design system — Web + iOS tokens</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">deployed_code</span> Production iOS app shipped</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">frame_inspect</span> Dedicated prototyping canvas</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">verified</span> Quality gate: SHIP / REVISE / REJECT</li>
           </ul>
           <p class="team-total">1 designer · 17 sessions</p>
         </div>
       </div>
 
       <p class="section-body" style="margin-top:2rem;">The substitution is not perfect and is not claimed to be. A team brings things a methodology cannot replace: domain expertise across specializations, lived research, the friction of disagreement. What the methodology provides is structure dense enough to make one person's judgment legible and consistent at the scale where it would otherwise collapse.</p>
+
+      <!-- ARTIFACT: Token Sheet -->
+      <div class="artifact-block" style="margin-top:3rem;">
+        <p class="artifact-eyebrow">Artifact — Design System</p>
+        <div class="token-sheet">
+          <div class="token-sheet-cols">
+            <span class="token-sheet-col-label"></span>
+            <span class="token-sheet-col-label">Token</span>
+            <span class="token-sheet-col-label">Web (CSS)</span>
+            <span class="token-sheet-col-label">iOS (SwiftUI)</span>
+          </div>
+
+          <div class="token-sheet-section">
+            <div class="token-section-label">Surface — Neutral Scale</div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#FAFAF8;"></div>
+              <div class="token-name">paper-00</div>
+              <div class="token-val token-val--web">--color-paper-00</div>
+              <div class="token-val token-val--ios">Color.paper00</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#F2F0ED;"></div>
+              <div class="token-name">paper-05</div>
+              <div class="token-val token-val--web">--color-paper-05</div>
+              <div class="token-val token-val--ios">Color.paper05</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#D6D3CE;"></div>
+              <div class="token-name">paper-30</div>
+              <div class="token-val token-val--web">--color-paper-30</div>
+              <div class="token-val token-val--ios">Color.paper30</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#3A3730;"></div>
+              <div class="token-name">paper-80</div>
+              <div class="token-val token-val--web">--color-paper-80</div>
+              <div class="token-val token-val--ios">Color.paper80</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#0D0B09; border-color:rgba(0,0,0,.3);"></div>
+              <div class="token-name">paper-100</div>
+              <div class="token-val token-val--web">--color-paper-100</div>
+              <div class="token-val token-val--ios">Color.paper100</div>
+            </div>
+          </div>
+
+          <div class="token-sheet-section">
+            <div class="token-section-label">Signal — Semantic Intent</div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#8892a4;"></div>
+              <div class="token-name">signal-observation</div>
+              <div class="token-val token-val--web">--signal-observation</div>
+              <div class="token-val token-val--ios">Color.signalObservation</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#4a8ef0;"></div>
+              <div class="token-name">signal-question</div>
+              <div class="token-val token-val--web">--signal-question</div>
+              <div class="token-val token-val--ios">Color.signalQuestion</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#4caf82;"></div>
+              <div class="token-name">signal-idea</div>
+              <div class="token-val token-val--web">--signal-idea</div>
+              <div class="token-val token-val--ios">Color.signalIdea</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#e8a44a;"></div>
+              <div class="token-name">signal-tension</div>
+              <div class="token-val token-val--web">--signal-tension</div>
+              <div class="token-val token-val--ios">Color.signalTension</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#e05454;"></div>
+              <div class="token-name">signal-action</div>
+              <div class="token-val token-val--web">--signal-action</div>
+              <div class="token-val token-val--ios">Color.signalAction</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#8b5cf6;"></div>
+              <div class="token-name">signal-reflection</div>
+              <div class="token-val token-val--web">--signal-reflection</div>
+              <div class="token-val token-val--ios">Color.signalReflection</div>
+            </div>
+            <div class="token-row">
+              <div class="token-swatch" style="background:#C4652A;"></div>
+              <div class="token-name">brand-mark</div>
+              <div class="token-val token-val--web">--color-brand-mark</div>
+              <div class="token-val token-val--ios">Color.brandMark</div>
+            </div>
+          </div>
+
+          <div class="token-sheet-section">
+            <div class="token-section-label">Type — Scale + Role</div>
+            <div class="token-type-row">
+              <div></div>
+              <div class="token-name">mechanism / mono</div>
+              <div class="token-val token-val--web">Space Mono</div>
+              <div class="token-val token-val--ios">Font.mechanism</div>
+            </div>
+            <div class="token-type-row">
+              <div></div>
+              <div class="token-name">tape / sans</div>
+              <div class="token-val token-val--web">IBM Plex Sans</div>
+              <div class="token-val token-val--ios">Font.tape</div>
+            </div>
+            <div class="token-type-row">
+              <div></div>
+              <div class="token-name">type-title</div>
+              <div class="token-val token-val--web">2rem / 700 / tape</div>
+              <div class="token-val token-val--ios">Typography.title</div>
+            </div>
+            <div class="token-type-row">
+              <div></div>
+              <div class="token-name">type-body</div>
+              <div class="token-val token-val--web">1rem / 400 / tape</div>
+              <div class="token-val token-val--ios">Typography.body</div>
+            </div>
+            <div class="token-type-row">
+              <div></div>
+              <div class="token-name">type-mono</div>
+              <div class="token-val token-val--web">0.8rem / 500 / mechanism</div>
+              <div class="token-val token-val--ios">Typography.mono</div>
+            </div>
+            <div class="token-type-row">
+              <div></div>
+              <div class="token-name">type-label</div>
+              <div class="token-val token-val--web">0.7rem / 600 / mechanism</div>
+              <div class="token-val token-val--ios">Typography.label</div>
+            </div>
+          </div>
+        </div>
+        <p class="artifact-caption">Design system tokens — surface scale, semantic signal colors, and type roles. All tokens defined for both Web (CSS custom property) and iOS (SwiftUI extension). Signal colors carry semantic meaning only; decorative use is a defect.</p>
+      </div>
 
     </div>
   </div>
@@ -855,6 +989,89 @@ Decision / Direction discarded / Constraint named:
       <div class="callout callout--insight" style="margin-top:2rem;">
         <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
         <div><p>A single prompt produces one node. This process produces six — each one eliminating options that seemed viable until examined. The reasoning trail is the output. The navigation model is a consequence of the trail, not the other way around.</p></div>
+      </div>
+
+      <!-- ARTIFACT: App Screen Mockup -->
+      <div class="artifact-block" style="margin-top:3rem;">
+        <p class="artifact-eyebrow">Artifact — Output</p>
+        <div class="mockup-wrap">
+          <div class="mockup-phone" role="img" aria-label="Abstracted app screen showing spatial navigation model: narrow timestamp spine on left, scrollable entry timeline on right, each entry tagged with a signal color dot">
+            <div class="mockup-statusbar">
+              <span class="mockup-statusbar-time">9:41</span>
+              <div class="mockup-statusbar-icons">
+                <div class="mockup-bar-icon"></div>
+                <div class="mockup-bar-icon" style="width:8px;opacity:.6;"></div>
+              </div>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-spine">
+                <div class="mockup-spine-ts">9:14</div>
+                <div class="mockup-spine-ts">9:31</div>
+                <div class="mockup-spine-ts">11:52</div>
+                <div class="mockup-spine-ts mockup-spine-ts--gap">
+                  <span class="mockup-spine-gap-chip">1d</span>
+                </div>
+                <div class="mockup-spine-ts">8:03</div>
+                <div class="mockup-spine-ts">8:47</div>
+                <div class="mockup-spine-ts">2:14</div>
+                <div class="mockup-spine-ts">4:55</div>
+              </div>
+              <div class="mockup-timeline">
+                <div class="mockup-entry">
+                  <div class="mockup-entry-dot mockup-entry-dot--q"></div>
+                  <div class="mockup-entry-body">
+                    <p class="mockup-entry-text">Does the navigation model need to hold three states simultaneously, or does it just need to feel like it does?</p>
+                  </div>
+                </div>
+                <div class="mockup-entry">
+                  <div class="mockup-entry-dot mockup-entry-dot--idea"></div>
+                  <div class="mockup-entry-body">
+                    <p class="mockup-entry-text">The framing problem isn't about the feature itself — it's about what the feature implies about the product's intent.</p>
+                  </div>
+                </div>
+                <div class="mockup-entry mockup-entry--active">
+                  <div class="mockup-entry-dot mockup-entry-dot--ten"></div>
+                  <div class="mockup-entry-body">
+                    <p class="mockup-entry-text">Tab bars imply parallel content. Navigation stacks imply hierarchy. Neither matches the model. There is no existing pattern for this.</p>
+                    <p class="mockup-entry-thread">↗ Spatial Navigation Model</p>
+                  </div>
+                </div>
+                <div class="mockup-datelabel">— 1 day —</div>
+                <div class="mockup-entry">
+                  <div class="mockup-entry-dot mockup-entry-dot--act"></div>
+                  <div class="mockup-entry-body">
+                    <p class="mockup-entry-text">The spine is the mechanism. The timeline is the tape. These are not tabs.</p>
+                    <p class="mockup-entry-thread">↗ Spatial Navigation Model</p>
+                  </div>
+                </div>
+                <div class="mockup-entry">
+                  <div class="mockup-entry-dot mockup-entry-dot--obs"></div>
+                  <div class="mockup-entry-body">
+                    <p class="mockup-entry-text">Spatial offset means the content area is always full width. The interface shifts to reveal — it does not navigate.</p>
+                  </div>
+                </div>
+                <div class="mockup-entry">
+                  <div class="mockup-entry-dot mockup-entry-dot--ref"></div>
+                  <div class="mockup-entry-body">
+                    <p class="mockup-entry-text">Three detents. Zero tabs. The gesture is the navigation model.</p>
+                    <p class="mockup-entry-thread">↗ Spatial Navigation Model</p>
+                  </div>
+                </div>
+                <div class="mockup-entry">
+                  <div class="mockup-entry-dot mockup-entry-dot--idea"></div>
+                  <div class="mockup-entry-body">
+                    <p class="mockup-entry-text">Spring animation at snap target. Haptic feedback at each detent crossing — light impact, 8pt window.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mockup-compose-bar">
+              <div class="mockup-compose-field"></div>
+              <div class="mockup-compose-commit"></div>
+            </div>
+          </div>
+        </div>
+        <p class="artifact-caption">The output of the decision anatomy. Spatial navigation — three persistent states, gesture-driven horizontal offset. Entries are tagged with signal intent. Thread provenance surfaces inline, not as a navigation destination.</p>
       </div>
 
     </div>
