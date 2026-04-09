@@ -815,7 +815,7 @@ Decision / Direction discarded / Constraint named:
         <div class="mockup-strip-wrap">
           <div class="mockup-strip" role="img" aria-label="Three wireframe screens showing app states: compose new entry, entry list, and entry detail view">
 
-            <!-- Frame 1: Compose -->
+            <!-- Frame 1: Compose — append-only entry, intent selector -->
             <div class="mockup-frame">
               <div class="mockup-wf">
                 <div class="wf-statusbar">
@@ -823,24 +823,37 @@ Decision / Direction discarded / Constraint named:
                   <div class="wf-statusbar-dot" style="width:20px;"></div>
                 </div>
                 <div class="wf-navbar">
-                  <div class="wf-navbar-title"></div>
-                  <div class="wf-navbar-btn" style="background:#ddd;width:22%;margin-left:0;"></div>
+                  <div class="wf-navbar-title" style="width:50%;"></div>
                   <div class="wf-navbar-btn"></div>
                 </div>
-                <div class="wf-content" style="padding:0.4rem 0.5rem;gap:0.2rem;">
-                  <div class="wf-line wf-line--sm" style="width:28%;margin-bottom:0.1rem;"></div>
-                  <div class="wf-line wf-line--body" style="height:54px;border-radius:4px;background:#fff;border:1px solid #e0e0e0;"></div>
-                  <div class="wf-line wf-line--body" style="width:55%;background:#c8daf5;height:7px;border-radius:3px;margin-top:0.3rem;"></div>
+                <div class="wf-content" style="padding:0.5rem 0.5rem 0.4rem;gap:0.3rem;">
+                  <!-- Intent type picker: 6 colored dots in a row -->
+                  <div style="display:flex;gap:0.3rem;margin-bottom:0.15rem;">
+                    <div style="width:8px;height:8px;border-radius:50%;background:#8892a4;"></div>
+                    <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;outline:2px solid #3b82f6;outline-offset:1.5px;"></div>
+                    <div style="width:8px;height:8px;border-radius:50%;background:#22c55e;"></div>
+                    <div style="width:8px;height:8px;border-radius:50%;background:#f59e0b;"></div>
+                    <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;"></div>
+                    <div style="width:8px;height:8px;border-radius:50%;background:#8b5cf6;"></div>
+                  </div>
+                  <!-- Entry text area -->
+                  <div style="flex:1;background:#fff;border:1px solid #e0e0e0;border-radius:5px;padding:0.4rem 0.4rem;display:flex;flex-direction:column;gap:0.2rem;">
+                    <div class="wf-line wf-line--body"></div>
+                    <div class="wf-line wf-line--body2"></div>
+                    <div class="wf-line" style="width:40%;"></div>
+                    <!-- cursor blink -->
+                    <div style="width:1px;height:8px;background:#3b82f6;margin-top:0.1rem;"></div>
+                  </div>
                 </div>
                 <div class="wf-compose-bar">
-                  <div class="wf-compose-field" style="background:#e8e8f5;border-color:#c8daf5;"></div>
+                  <div class="wf-compose-field" style="background:#f0f4ff;border-color:#c8daf5;"></div>
                   <div class="wf-compose-btn"></div>
                 </div>
               </div>
               <span class="mockup-frame-label">Compose</span>
             </div>
 
-            <!-- Frame 2: Entry List -->
+            <!-- Frame 2: Timeline — entries with intent dots, micro-label gap -->
             <div class="mockup-frame">
               <div class="mockup-wf">
                 <div class="wf-statusbar">
@@ -851,55 +864,40 @@ Decision / Direction discarded / Constraint named:
                   <div class="wf-navbar-title"></div>
                   <div class="wf-navbar-btn"></div>
                 </div>
-                <div class="wf-search"></div>
-                <div class="wf-content">
-                  <div class="wf-section-label"></div>
-                  <div class="wf-card wf-card--active">
-                    <div class="wf-card-row">
-                      <div class="wf-card-icon" style="background:#ddeeff;"></div>
-                      <div class="wf-card-lines">
-                        <div class="wf-line wf-line--title"></div>
-                        <div class="wf-line wf-line--body"></div>
-                        <div class="wf-line wf-line--body2"></div>
-                      </div>
-                    </div>
-                    <div class="wf-card-meta">
-                      <div class="wf-line" style="width:22%;"></div>
-                      <div class="wf-line wf-line--sm"></div>
-                    </div>
+                <div class="wf-content" style="padding:0.25rem 0;">
+                  <!-- Entry rows with intent dots -->
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding:0.3rem 0.45rem;border-bottom:1px solid #f0f0f0;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#3b82f6;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line wf-line--body"></div><div class="wf-line wf-line--body2"></div></div>
                   </div>
-                  <div class="wf-card">
-                    <div class="wf-card-row">
-                      <div class="wf-card-icon" style="background:#ddf3e4;"></div>
-                      <div class="wf-card-lines">
-                        <div class="wf-line wf-line--title" style="width:60%;"></div>
-                        <div class="wf-line wf-line--body"></div>
-                      </div>
-                    </div>
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding:0.3rem 0.45rem;border-bottom:1px solid #f0f0f0;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#f59e0b;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line" style="width:90%;"></div><div class="wf-line wf-line--body2"></div></div>
                   </div>
-                  <div class="wf-section-label" style="margin-top:0.15rem;"></div>
-                  <div class="wf-card">
-                    <div class="wf-card-row">
-                      <div class="wf-card-icon" style="background:#fef0e0;"></div>
-                      <div class="wf-card-lines">
-                        <div class="wf-line wf-line--title" style="width:70%;"></div>
-                        <div class="wf-line wf-line--body"></div>
-                        <div class="wf-line wf-line--body2"></div>
-                      </div>
-                    </div>
+                  <!-- Micro-label: gap > 32h -->
+                  <div style="text-align:center;padding:0.2rem;"><div class="wf-line" style="width:40%;margin:0 auto;background:#c8daf5;"></div></div>
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding:0.3rem 0.45rem;border-bottom:1px solid #f0f0f0;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#22c55e;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line wf-line--body"></div><div class="wf-line" style="width:50%;"></div></div>
+                  </div>
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding:0.3rem 0.45rem;border-bottom:1px solid #f0f0f0;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#8892a4;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line wf-line--body"></div><div class="wf-line wf-line--body2"></div></div>
+                  </div>
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding:0.3rem 0.45rem;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#8b5cf6;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line" style="width:75%;"></div></div>
                   </div>
                 </div>
-                <div class="wf-tabbar">
-                  <div class="wf-tab-pip wf-tab-pip--active"></div>
-                  <div class="wf-tab-pip"></div>
-                  <div class="wf-tab-pip"></div>
-                  <div class="wf-tab-pip"></div>
+                <div class="wf-compose-bar">
+                  <div class="wf-compose-field"></div>
+                  <div class="wf-compose-btn"></div>
                 </div>
               </div>
-              <span class="mockup-frame-label">Entry list</span>
+              <span class="mockup-frame-label">Timeline</span>
             </div>
 
-            <!-- Frame 3: Detail -->
+            <!-- Frame 3: Thread detail — synthesis header, member entries -->
             <div class="mockup-frame">
               <div class="mockup-wf">
                 <div class="wf-statusbar">
@@ -908,35 +906,42 @@ Decision / Direction discarded / Constraint named:
                 </div>
                 <div class="wf-navbar">
                   <div class="wf-navbar-title" style="width:14%;background:#a8c4f0;"></div>
-                  <div class="wf-navbar-title" style="width:38%;"></div>
+                  <div class="wf-navbar-title" style="width:42%;"></div>
                   <div class="wf-navbar-btn"></div>
                 </div>
-                <div class="wf-detail-header">
-                  <div class="wf-line wf-line--title" style="width:70%;height:7px;"></div>
-                  <div class="wf-line" style="width:35%;"></div>
-                  <div class="wf-line wf-line--sm" style="margin-top:0.1rem;"></div>
+                <!-- Synthesis block -->
+                <div style="background:#f0f4ff;border-bottom:1px solid #ddeeff;padding:0.4rem 0.5rem;display:flex;flex-direction:column;gap:0.18rem;">
+                  <div class="wf-line" style="width:28%;background:#a8c4f0;"></div>
+                  <div class="wf-line wf-line--body"></div>
+                  <div class="wf-line wf-line--body2"></div>
+                  <div class="wf-line" style="width:55%;"></div>
                 </div>
                 <div class="wf-detail-content">
-                  <div class="wf-line wf-line--body"></div>
-                  <div class="wf-line wf-line--body"></div>
-                  <div class="wf-line wf-line--body2"></div>
-                  <div class="wf-line wf-line--body" style="margin-top:0.3rem;"></div>
-                  <div class="wf-line wf-line--body"></div>
-                  <div class="wf-line wf-line--body2"></div>
-                  <div class="wf-line wf-line--body" style="margin-top:0.3rem;"></div>
-                  <div class="wf-line wf-line--body" style="width:45%;"></div>
+                  <!-- Member entries -->
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding-bottom:0.25rem;border-bottom:1px solid #f0f0f0;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#f59e0b;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line wf-line--body"></div><div class="wf-line wf-line--body2"></div></div>
+                  </div>
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding:0.25rem 0;border-bottom:1px solid #f0f0f0;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#3b82f6;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line" style="width:85%;"></div><div class="wf-line wf-line--body2"></div></div>
+                  </div>
+                  <div style="display:flex;align-items:flex-start;gap:0.25rem;padding-top:0.25rem;">
+                    <div style="width:5px;height:5px;border-radius:50%;background:#22c55e;margin-top:0.2rem;flex-shrink:0;"></div>
+                    <div style="flex:1;display:flex;flex-direction:column;gap:0.18rem;"><div class="wf-line wf-line--body"></div></div>
+                  </div>
                 </div>
                 <div class="wf-compose-bar">
                   <div class="wf-compose-field"></div>
                   <div class="wf-compose-btn"></div>
                 </div>
               </div>
-              <span class="mockup-frame-label">Entry detail</span>
+              <span class="mockup-frame-label">Thread detail</span>
             </div>
 
           </div>
         </div>
-        <p class="artifact-caption">Three interface states — compose, list, detail — each designed and specified before any code was written. Wireframes are the design deliverable; the spec is the handoff.</p>
+        <p class="artifact-caption">Three interface states: intent-tagged compose (6 signal types), append-only timeline with 32-hour micro-label threshold, thread detail with AI synthesis header. Each surface specified before any code was written.</p>
       </div>
 
       <!-- ARTIFACT: Token Sheet -->
@@ -1121,77 +1126,55 @@ Decision / Direction discarded / Constraint named:
         <div><p>A single prompt produces one node. This process produces six — each one eliminating options that seemed viable until examined. The reasoning trail is the output. The navigation model is a consequence of the trail, not the other way around.</p></div>
       </div>
 
-      <!-- ARTIFACT: App Screen Mockup -->
+      <!-- ARTIFACT: Spatial model diagram -->
       <div class="artifact-block" style="margin-top:3rem;">
-        <p class="artifact-eyebrow">Artifact — Output</p>
-        <div class="mockup-wrap">
-          <div class="mockup-phone" role="img" aria-label="App screen showing spatial navigation model: organizational panel revealed on the left by gesture, content timeline visible on the right, no tab bar">
-            <!-- Status bar -->
-            <div class="mockup-statusbar">
-              <span class="mockup-statusbar-time">9:41</span>
-              <div class="mockup-statusbar-icons">
-                <div class="mockup-bar-icon"></div>
-                <div class="mockup-bar-icon" style="width:8px;opacity:.55;"></div>
+        <p class="artifact-eyebrow">Artifact — Spatial Model</p>
+        <div class="spatial-diagram" role="img" aria-label="Diagram showing three coexisting interface states: organizational view on left revealed by gesture, content timeline dominant in center, compose surface on right accessible by gesture">
+          <div class="sd-zones">
+            <div class="sd-zone sd-zone--org">
+              <p class="sd-zone-label">Cabinet</p>
+              <p class="sd-zone-sub">Revealed by gesture ←</p>
+              <div class="sd-zone-content">
+                <div class="sd-list-item sd-list-item--active" style="width:80%;"></div>
+                <div class="sd-list-item" style="width:65%;"></div>
+                <div class="sd-list-item" style="width:72%;"></div>
+                <div class="sd-list-item" style="width:58%;"></div>
+                <div class="sd-list-divider"></div>
+                <div class="sd-list-item sd-list-item--muted" style="width:50%;"></div>
               </div>
             </div>
-            <!-- Spatial body: two panels side by side -->
-            <div class="mockup-spatial-body">
-              <!-- Organizational panel (revealed by gesture) -->
-              <div class="mockup-org-panel">
-                <p class="mockup-org-label">Groups</p>
-                <div class="mockup-org-item mockup-org-item--active">Navigation model</div>
-                <div class="mockup-org-item">Q2 roadmap</div>
-                <div class="mockup-org-item">User research</div>
-                <div class="mockup-org-item">Design system</div>
-                <div class="mockup-org-item">Sprint planning</div>
-                <div class="mockup-org-divider"></div>
-                <div class="mockup-org-item mockup-org-item--muted">Archive</div>
+            <div class="sd-arrow">
+              <div class="sd-arrow-line"></div>
+              <p class="sd-arrow-label">gesture</p>
+              <div class="sd-arrow-line"></div>
+            </div>
+            <div class="sd-zone sd-zone--content">
+              <p class="sd-zone-label">Timeline</p>
+              <p class="sd-zone-sub">Always dominant</p>
+              <div class="sd-zone-content">
+                <div class="sd-entry-row"><span class="sd-dot sd-dot--q"></span><div class="sd-entry-lines"><div class="sd-line sd-line--w80"></div><div class="sd-line sd-line--w55"></div></div></div>
+                <div class="sd-entry-row sd-entry-row--active"><span class="sd-dot sd-dot--ten"></span><div class="sd-entry-lines"><div class="sd-line sd-line--w90"></div><div class="sd-line sd-line--w70"></div></div></div>
+                <div class="sd-entry-row"><span class="sd-dot sd-dot--act"></span><div class="sd-entry-lines"><div class="sd-line sd-line--w65"></div></div></div>
+                <div class="sd-entry-row"><span class="sd-dot sd-dot--idea"></span><div class="sd-entry-lines"><div class="sd-line sd-line--w75"></div><div class="sd-line sd-line--w50"></div></div></div>
               </div>
-              <!-- Content timeline (dominant view) -->
-              <div class="mockup-content-panel">
-                <div class="mockup-content-header">
-                  <span class="mockup-content-title">Navigation model</span>
-                  <span class="mockup-content-count">12 entries</span>
-                </div>
-                <div class="mockup-entry-list">
-                  <div class="mockup-entry">
-                    <div class="mockup-entry-dot mockup-entry-dot--q"></div>
-                    <div class="mockup-entry-body">
-                      <p class="mockup-entry-text">Does the nav model need to hold three states simultaneously, or just feel like it does?</p>
-                      <p class="mockup-entry-ts">9:14 AM</p>
-                    </div>
-                  </div>
-                  <div class="mockup-entry mockup-entry--active">
-                    <div class="mockup-entry-dot mockup-entry-dot--ten"></div>
-                    <div class="mockup-entry-body">
-                      <p class="mockup-entry-text">Tab bars fail. Stacks fail. Spatial offset is the only model where three states coexist without hierarchy.</p>
-                      <p class="mockup-entry-ts">9:31 AM</p>
-                    </div>
-                  </div>
-                  <div class="mockup-entry">
-                    <div class="mockup-entry-dot mockup-entry-dot--act"></div>
-                    <div class="mockup-entry-body">
-                      <p class="mockup-entry-text">Two detents. The interface shifts to reveal — it does not navigate.</p>
-                      <p class="mockup-entry-ts">11:52 AM</p>
-                    </div>
-                  </div>
-                  <div class="mockup-entry">
-                    <div class="mockup-entry-dot mockup-entry-dot--idea"></div>
-                    <div class="mockup-entry-body">
-                      <p class="mockup-entry-text">Haptic at detent crossings. Spring to snap target. Gesture is the navigation model.</p>
-                      <p class="mockup-entry-ts">2:14 PM</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mockup-compose-strip">
-                  <div class="mockup-compose-field"></div>
-                  <div class="mockup-compose-commit"></div>
-                </div>
+            </div>
+            <div class="sd-arrow">
+              <div class="sd-arrow-line"></div>
+              <p class="sd-arrow-label">gesture</p>
+              <div class="sd-arrow-line"></div>
+            </div>
+            <div class="sd-zone sd-zone--compose">
+              <p class="sd-zone-label">Compose</p>
+              <p class="sd-zone-sub">→ Always accessible</p>
+              <div class="sd-zone-content sd-zone-content--compose">
+                <div class="sd-compose-field"></div>
+                <div class="sd-compose-hint">Append-only · intent-tagged</div>
               </div>
             </div>
           </div>
+          <p class="sd-note">No tab bar. Cabinet / Timeline / Compose coexist at fixed offsets — the interface shifts to reveal, it does not navigate.</p>
         </div>
-        <p class="artifact-caption">The inevitable solution. Organizational panel revealed by gesture, not navigation. Content timeline is the dominant view. No tab bar — the decision anatomy eliminated it. Three states coexist spatially.</p>
+        <p class="artifact-caption">The output of the decision anatomy. Spatial offset replaces navigation — three persistent states, zero tabs, gesture-driven.</p>
       </div>
 
     </div>
