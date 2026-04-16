@@ -1,21 +1,17 @@
 /* ============================================================
-   EPS.xd OS — app.js
+   Design AI Operating System — app.js
    ============================================================ */
 
 const navMap = {
   'page-home': 'nav-home',
+  'page-start-here': 'nav-start-here',
+  'page-rolling-out': 'nav-rolling-out',
   'page-case-study': 'nav-case-study',
-  'page-setup': 'nav-setup',
-  'page-reference': 'nav-reference',
   'page-behavioral-contract': 'nav-system',
-  'page-agents': 'nav-system',
-  'page-skills': 'nav-system',
+  'page-agents-skills': 'nav-system',
   'page-memory': 'nav-system',
-  'page-governance': 'nav-pillars',
-  'page-vocabulary': 'nav-pillars',
-  'page-onboarding': 'nav-pillars',
-  'page-ceremony': 'nav-pillars',
-  'page-proof': 'nav-pillars',
+  'page-setup': 'nav-system',
+  'page-reference': 'nav-reference',
 };
 
 function showPage(id) {
@@ -34,7 +30,7 @@ function showPage(id) {
   // Close all dropdowns
   document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0 });
 }
 
 function toggleDropdown(id) {
@@ -42,6 +38,33 @@ function toggleDropdown(id) {
   const isOpen = dd.classList.contains('open');
   document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
   if (!isOpen) dd.classList.add('open');
+}
+
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.getElementById('nav-hamburger');
+  const isOpen = menu.classList.contains('open');
+  menu.classList.toggle('open');
+  menu.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
+  btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+  btn.querySelector('.material-symbols-outlined').textContent = isOpen ? 'menu' : 'close';
+}
+
+function showPageMobile(id) {
+  showPage(id);
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.getElementById('nav-hamburger');
+  menu.classList.remove('open');
+  menu.setAttribute('aria-hidden', 'true');
+  btn.setAttribute('aria-expanded', 'false');
+  btn.querySelector('.material-symbols-outlined').textContent = 'menu';
+}
+
+function handleCardKeydown(e) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    e.currentTarget.click();
+  }
 }
 
 function copyCode(btn) {
@@ -55,9 +78,19 @@ function copyCode(btn) {
   });
 }
 
-// Close dropdowns on outside click
+// Close dropdowns and mobile menu on outside click
 document.addEventListener('click', (e) => {
   if (!e.target.closest('.has-dropdown')) {
     document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+  }
+  if (!e.target.closest('.sds-topnav') && !e.target.closest('.mobile-menu')) {
+    const menu = document.getElementById('mobile-menu');
+    const btn = document.getElementById('nav-hamburger');
+    if (menu && menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      menu.setAttribute('aria-hidden', 'true');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.querySelector('.material-symbols-outlined').textContent = 'menu';
+    }
   }
 });
