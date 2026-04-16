@@ -62,6 +62,18 @@ I also built synthetic users for the same reason — archetypes that represent t
 
 ---
 
+### What I didn't expect to relearn
+
+I spent fifteen minutes recently trying to describe a layout problem to Claude. What I was trying to communicate was spatial — a relationship between elements on a surface, a proportion question, a question about hierarchy under different content conditions. I kept restating it. The responses were coherent and kept missing the thing. Then I stopped, sketched it on paper, took a screenshot, and dropped it in. The conversation resolved in two exchanges.
+
+The sketch wasn't a deliverable. It was the kind of thing I'd have drawn on a whiteboard to get aligned with another designer — rough, structurally accurate, enough to give the idea shape without giving it form. That's what made it work. Not the image itself, but what the image communicated: the idea, directly, without the translation loss that comes from converting a spatial relationship into a verbal description of a spatial relationship.
+
+The text interface creates a pressure that's easy to absorb without noticing. The tool speaks in text, so maybe the work has to happen in text. It doesn't. The gravitational pull is real — when your primary interface is a prompt box, your visual tools start to feel like things you're meant to work around rather than with. That's worth resisting. Visual input is a full channel. For anything spatial, anything about proportion or relationship or structure, it's often the sharper one. Figma exports, design screenshots, rough sketches: the AI sees what you show it. Show it the thing.
+
+The secondary observation: the rough sketch isn't just faster to communicate than a verbal description. It might also be a reason to pick up a pen before opening a tool. The constraint of analog forces a different kind of thinking — more structural, less component-driven. Whether AI collaboration quietly brings that back as a side effect is something I'm watching. It would be an odd but welcome outcome.
+
+---
+
 ### What I still don't know
 
 The honest version: I don't know how this translates to a team.
