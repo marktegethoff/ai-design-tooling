@@ -77,7 +77,7 @@
         </div>
         <div class="compare-card compare-card--highlight">
           <p class="compare-label">EPS.xd OS — this site</p>
-          <p class="compare-desc">How we Claude. Our behavioral contracts. Our shared context structure. Our team vocabulary. Our institutional memory. How one EPS.xd designer built a production product solo — and what that means for all of us.</p>
+          <p class="compare-desc">How we Claude. Our behavioral contracts. Our shared context structure. Our team vocabulary. Our institutional memory. How one EPS.xd designer built a production product — and what that means for all of us.</p>
         </div>
       </div>
     </div>
@@ -741,7 +741,7 @@ Decision / Direction discarded / Constraint named:
 
       <div class="callout callout--tip">
         <span class="material-symbols-outlined callout-icon" aria-hidden="true">tips_and_updates</span>
-        <div><p>The case study for EPS.xd OS is linked on the next page. It documents the methodology used to build a production-quality digital product as a solo designer — the full arc, including what broke, what the system couldn't solve, and where judgment was irreplaceable.</p>
+        <div><p>The case study for EPS.xd OS is linked on the next page. It documents the methodology used to build a production-quality digital product — the full arc, including what broke, what the system couldn't solve, and where judgment was irreplaceable.</p>
         <p style="margin-top:0.5rem;"><a href="#" onclick="showPage('page-case-study')">Read the case study →</a></p></div>
       </div>
     </div>
@@ -755,8 +755,57 @@ Decision / Direction discarded / Constraint named:
   <div class="page-hero page-hero--dark">
     <div class="hero-inner">
       <p class="hero-eyebrow">Case Study</p>
-      <h1 class="hero-title">One EPS.xd designer. Full production product. This is the proof.</h1>
-      <p class="hero-subtitle">Your AI Tooling lead built a production-quality digital product solo — design system, AI features, database architecture, sync infrastructure, release model.</p>
+      <h1 class="hero-title">What the right infrastructure makes possible. This is the proof.</h1>
+      <p class="hero-subtitle">Your AI Tooling lead used this methodology to build a production-quality digital product — design system, AI features, database architecture, sync infrastructure, release model — with the scope that previously required a full team.</p>
+    </div>
+  </div>
+
+  <!-- PERSONAL NARRATIVE: WHAT I ACTUALLY LEARNED -->
+  <div class="home-section">
+    <div class="section-inner">
+
+      <div class="callout callout--tip">
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">tips_and_updates</span>
+        <div><p>The product is private IP and is not named here. What is documented is the methodology — the system structure, the decisions made, the practice that evolved, and the honest account of where judgment was irreplaceable.</p></div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:2rem;">What I actually learned</h2>
+      <p class="section-body" style="font-style:italic;color:var(--color-text-light);">A personal account of how this practice was built — what worked, what broke, and what I still don't know.</p>
+
+      <h3 class="section-subtitle">How I started</h3>
+      <p class="section-body">I didn't start with Claude Code. I started in ChatGPT, building an app I had no idea how to build.</p>
+      <p class="section-body">I'm a designer. I have opinions about product strategy. I understand systems. I'd never written a line of Swift. But I had an idea for a personal journaling app, and I approached it the way I approach design: start with the ethos, define the principles, build the system before you build anything in it. I spent weeks in ChatGPT working out what the app should stand for before I wrote a line of anything.</p>
+      <p class="section-body">Then I needed to actually build it. I opened Claude, and my first serious session involved asking it — step by step — what to click in Xcode to create an iOS project. Not "how does SwiftUI work." Literally: what do I click. That was the starting point.</p>
+      <p class="section-body">What I learned in that first phase was how much I didn't know I didn't know. I thought setting up agents meant I had structured AI collaboration. I didn't — the agents weren't installed anywhere that persisted between sessions. I thought HTML prototypes would tell me something useful about iOS. They didn't — the medium actively misleads you about what the native platform will actually feel like. I was making confident decisions on a shaky foundation.</p>
+
+      <h3 class="section-subtitle">What broke</h3>
+      <p class="section-body">The first thing that broke was the prototype-to-production translation. I'd validated something in HTML that couldn't work the same way on iOS. The feedback from the prototype was real feedback about the wrong thing. I had to build a dedicated prototyping environment — a lightweight SwiftUI canvas, separated from the production codebase — to get feedback that was actually legible for what I was building.</p>
+      <p class="section-body">The second thing that broke was context. I was having what felt like conversations with a team. The interface was fluid. The responses were coherent. And then an agent would produce a beautifully reasoned recommendation that was confidently wrong — not because the reasoning was bad, but because the agent didn't know what I knew. It had the context I'd given it in that session. It did not have the context I'd accumulated over months of work.</p>
+      <p class="section-body">This is the thing I most want you to sit with, because it's the insight I see people miss most often: when you're having a natural language conversation with what feels like a collaborator, you forget the system is stateless. There is no persistent memory unless you build it. An agent can produce a well-reasoned rationale and be completely wrong about the system it's operating inside — and the rationale will feel convincing precisely because it's well-reasoned. Evaluating that output requires knowing more than the agent does. That knowledge doesn't exist anywhere except what you've built and maintained.</p>
+      <p class="section-body">I built a lot of infrastructure around this problem. Sixty-four architectural decisions, logged and indexed — so nothing gets re-litigated in session 12 that was resolved in session 4. Memory files that load at session start and give agents the current state of the system. Specifications that codify exactly what a surface should do before any code is written, so the engineer agent and the design agent are working from the same document. A session start protocol that confirms scope before a token is spent. The context has to be actively built and maintained. It doesn't accumulate automatically.</p>
+
+      <h3 class="section-subtitle">What I built</h3>
+      <p class="section-body">What I actually built is a mech suit.</p>
+      <p class="section-body">Not a replacement. Not automation. Something that extends what I can do — that fills in capabilities I don't have while leaving the judgment where it belongs.</p>
+      <p class="section-body">I don't know Swift. But my system speaks a technical language fluently, and working inside it means I've learned to speak it too. I'm not more technical than I was. But I ask better questions, I challenge weak answers, I understand tradeoffs in the data model in ways I didn't before. The system teaches me as I use it. That was not something I planned for — it happened as a consequence of the way the work is structured.</p>
+      <p class="section-body">I also built a team that argues. That part I did deliberately, even if I wasn't sure it would work.</p>
+      <p class="section-body">The specific failure I was trying to prevent: one person with complete context, building a product where the user is themselves, running decisions through agents that are wired to agree. A closed loop. The longer it runs, the more it confirms itself. I've seen this in design teams — the longer a team goes without real friction, the more their decisions start to look inevitable to themselves and arbitrary to everyone else.</p>
+      <p class="section-body">So I engineered friction. There's a culture document in the system — not a configuration file, an actual statement of how the team works. "Argue hard. Commit fully. Trust the craft." And the individual agent files go further: the Critic's file describes the Architect as the discipline most likely to resist its cuts, and gives explicit instructions for how to handle that resistance. The Marketer's file describes its working relationship with the Architect — one explodes scope, the other prices it. The Strategist is required to engage with the Historian's evidence even when it argues against the Strategist's position. These aren't personality quirks. They're designed accountability relationships.</p>
+      <p class="section-body">I'll be honest about what I can and can't claim here. The hypothesis is that designed opposition between agents — where the tension is baked into the agent definition, not imposed procedurally from outside — produces more genuinely diverse reasoning than either a single agent or a team of agents with different system prompts but no encoded relationship to each other. The historical precedent supports it: red teams, devil's advocate roles, legal adversarial process all show that mandatory counterposition prevents the confirmation drift that kills creative judgment over time. But I can't prove the AI version works better. I can only say it lines up with the theory, and that without it, I'd have no friction at all.</p>
+      <p class="section-body">I also built synthetic users for the same reason — archetypes that represent the different ways people actually use the kind of product I was making. The Thinker, the Reviewer, the Processor. The user I've been building for is me. That's useful and also dangerous. Synthetic users are the counterforce.</p>
+
+      <h3 class="section-subtitle">What I still don't know</h3>
+      <p class="section-body">The honest version: I don't know how this translates to a team.</p>
+      <p class="section-body">What I've built works because I'm one person with complete context — I'm the designer, the product manager, the QA, and the end user. The infrastructure I've described exists to extend that one-person context across time, not across people. A team is a different problem. Multiple people building shared context, with different backgrounds, different mental models, different relationships to ambiguity. Their questions won't be my questions.</p>
+      <p class="section-body">I have a point of view on what matters — behavioral contracts that persist, memory that accumulates, quality gates that enforce the process. But the honest answer about team translation is that I haven't had to solve it yet. What I can tell you is what it's been like for one designer, and what I believe is transferable. Where the evidence stops, I'll tell you it stops.</p>
+      <p class="section-body">That's what this site is: the transferable part, documented carefully, with the honest account of where judgment is still required.</p>
+
+    </div>
+  </div>
+
+  <div class="home-section home-section--warm" style="padding:1.5rem 2rem;">
+    <div class="section-inner">
+      <div class="section-divider-label">The methodology, in full</div>
     </div>
   </div>
 
@@ -775,7 +824,7 @@ Decision / Direction discarded / Constraint named:
 
       <div class="team-comparison">
         <div class="team-col">
-          <p class="team-col-label">Funded team — typical staffing</p>
+          <p class="team-col-label">Previously required</p>
           <ul class="team-list">
             <li><span class="material-symbols-outlined" aria-hidden="true">person</span> Design Lead × 1</li>
             <li><span class="material-symbols-outlined" aria-hidden="true">person</span> Product Designer × 2</li>
@@ -792,7 +841,7 @@ Decision / Direction discarded / Constraint named:
           <span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span>
         </div>
         <div class="team-col team-col--highlight">
-          <p class="team-col-label">EPS.xd OS — deployed</p>
+          <p class="team-col-label">Now accessible to each designer</p>
           <ul class="team-list">
             <li><span class="material-symbols-outlined" aria-hidden="true">smart_toy</span> 23 discipline agents</li>
             <li><span class="material-symbols-outlined" aria-hidden="true">terminal</span> 10 workflow skills</li>
@@ -1335,6 +1384,14 @@ Decision / Direction discarded / Constraint named:
   <!-- ON-RAMP -->
   <div class="home-section">
     <div class="section-inner">
+
+      <div class="callout callout--insight">
+        <span class="material-symbols-outlined callout-icon" aria-hidden="true">lightbulb</span>
+        <div>
+          <p class="callout-title">This is what we're building together</p>
+          <p>The methodology doesn't replace a team — it closes the access gap. The scope that previously required coordinating ten people becomes accessible to each designer working within it. What the case study demonstrates in one person's hands is what we're putting in yours.</p>
+        </div>
+      </div>
 
       <h2 class="section-title">This is the methodology. Here is how to start using it.</h2>
       <p class="section-body">The five pillars in EPS.xd OS are the distillation of what made the difference between a session that compounded and a session that wasted time. Not theory. Not a framework imported from somewhere else. The residue of real work.</p>
