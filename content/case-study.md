@@ -4,7 +4,7 @@
 
 **Title:** What the right infrastructure makes possible. This is the proof.
 
-**Subtitle:** Your AI Tooling lead used this methodology to build a production-quality digital product — design system, AI features, database architecture, sync infrastructure, release model — with the scope that previously required a full team.
+**Subtitle:** Your AI Tooling lead used this methodology to build a production-quality iOS app — where your words are the artifact and the AI is the archivist — with the scope that previously required a full team.
 
 ---
 
@@ -22,7 +22,7 @@
 
 I didn't start with Claude Code. I started in ChatGPT, building an app I had no idea how to build.
 
-I'm a designer. I have opinions about product strategy. I understand systems. I'd never written a line of Swift. But I had an idea for a personal journaling app, and I approached it the way I approach design: start with the ethos, define the principles, build the system before you build anything in it. I spent weeks in ChatGPT working out what the app should stand for before I wrote a line of anything.
+I'm a designer. I have opinions about product strategy. I understand systems. I'd never written a line of Swift. But I had an idea about friction. Every time you open a notes app, there's a silent question: where does this go? What is it? The pressure to title a note — to name the thing before you've said it — is one version of that question, and it's the one I kept thinking about. It sounds like a small thing. It's almost embarrassing to describe. But the research on task-switching is pretty clear that even a trivial switch carries an irreducible cost — and when the task you're switching away from is the thought itself, still forming, the switch isn't just overhead. It degrades what you were encoding. The moment you answer the structural question, some of the thought doesn't come back. Not everyone feels it. I do, and I suspect I'm not alone. I wanted to build something that removed that question entirely: capture first, structure later, imposed by a system working behind the record. I approached it the way I approach design: start with the ethos, define the principles, build the system before you build anything in it. I spent weeks in ChatGPT working out what the app should stand for before I wrote a line of anything.
 
 Then I needed to actually build it. I opened Claude, and my first serious session involved asking it — step by step — what to click in Xcode to create an iOS project. Not "how does SwiftUI work." Literally: what do I click. That was the starting point.
 
