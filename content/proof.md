@@ -28,4 +28,4 @@ The end product must meet the standard senior designers recognize as legitimate.
 
 Without an immediate next action, the proof converts attention into admiration, not adoption. Every proof asset must link directly to a workshop, a template, or a setup path. The designer finishes reading and has one clear thing to do next.
 
-> The case study for EPS.xd OS is linked on the next page. It documents the methodology used to build a production-quality digital product — the full arc, including what broke, what the system couldn't solve, and where judgment was irreplaceable.
+> The case study is linked on the next page. It documents the methodology used to build a production-quality digital product — the full arc, including what broke, what the system couldn't solve, and where judgment was irreplaceable.

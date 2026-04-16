@@ -9,7 +9,7 @@
 ## Org layer CLAUDE.md — starter template
 
 ```
-# EPS.xd — Org Layer Behavioral Contract
+# [Org Name] — Org Layer Behavioral Contract
 # This file is imported by all team CLAUDE.md files.
 # Do not edit without AI Tooling review.
 

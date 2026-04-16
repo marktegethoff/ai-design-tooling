@@ -16,7 +16,7 @@
 
 ## Skill evolution
 
-Skills evolve as you learn what sequence produces the best output. This is the arc from the EPS.xd OS case study:
+Skills evolve as you learn what sequence produces the best output. This is the arc from the case study:
 
 **1 — Simple slash commands**
 Single-agent invocations with no structure. Fast to write, inconsistent output.

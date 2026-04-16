@@ -1,10 +1,10 @@
-# EPS.xd OS — Design AI Operating System
+# Design AI Operating System
 
-A site for Capital One's EPS.xd design team (~100 designers) documenting how we use Claude Code for design work. Layers on top of `richhemsley3/claude-for-design` (mechanics curriculum). This covers the operating model on top of those mechanics.
+A site documenting how we use Claude Code for design work. Layers on top of `richhemsley3/claude-for-design` (mechanics curriculum). This covers the operating model on top of those mechanics.
 
 ## What this is
 
-EPS.xd OS is the team's shared framework for structured AI-assisted design work: behavioral contracts, governance, shared vocabulary, onboarding, and institutional memory. The case study documents the methodology used to build a production-quality digital product and provides the capability proof for team adoption.
+A shared framework for structured AI-assisted design work: behavioral contracts, governance, shared vocabulary, onboarding, and institutional memory. The case study documents the methodology used to build a production-quality digital product and provides the capability proof for team adoption.
 
 ## Structure
 
@@ -64,4 +64,4 @@ Senior Capital One designers skeptical of AI adoption. They respond to proof of 
 
 ## Maintained by
 
-AI Tooling — EPS.xd
+AI Tooling

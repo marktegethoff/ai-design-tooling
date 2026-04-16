@@ -1,22 +1,20 @@
-# Home — EPS.xd OS
+# Home
 
 ## Hero
 
-**Eyebrow:** EPS.xd OS
-
 **Title:** This is how we Claude.
 
-**Subtitle:** EPS.xd is the operating system for how we design with AI. Claude for Design installed the runtime. Everything here runs on top of it.
+**Subtitle:** This is the operating system for how we work with AI. Claude for Design installed the runtime. Everything here runs on top of it.
 
 ---
 
 ## Two layers. One system.
 
-[Claude for Design](https://github.com/richhemsley3/claude-for-design) teaches the mechanics — terminal, git, prompting, CLAUDE.md syntax. That's the foundation. EPS.xd OS is the layer above it: how *we* use those mechanics, what our behavioral contracts look like, how we share context as a team, and how we get better together over time. You need both. Start with mechanics if you're new. Come here when you're ready to build the system.
+[Claude for Design](https://github.com/richhemsley3/claude-for-design) teaches the mechanics — terminal, git, prompting, CLAUDE.md syntax. That's the foundation. This operating system is the layer above it: how *we* use those mechanics, what our behavioral contracts look like, how we share context as a team, and how we get better together over time. You need both. Start with mechanics if you're new. Come here when you're ready to build the system.
 
-| Claude for Design | EPS.xd OS — this site |
+| Claude for Design | This operating system — this site |
 |---|---|
-| Mechanics curriculum. How to use Claude Code: terminal, git, prompting, CLAUDE.md syntax, 8-week program. | How we Claude. Our behavioral contracts. Our shared context structure. Our team vocabulary. Our institutional memory. How one EPS.xd designer built a production product — and what that means for all of us. |
+| Mechanics curriculum. How to use Claude Code: terminal, git, prompting, CLAUDE.md syntax, 8-week program. | How we Claude. Our behavioral contracts. Our shared context structure. Our team vocabulary. Our institutional memory. How one designer built a production product — and what that means for all of us. |
 
 ---
 
